@@ -12,6 +12,19 @@ $(document).ready(function() {
         });
     }
 
+    pushFooter()
+    function pushFooter(){
+        $.ajax({
+            url: 'footer.html',
+            dataType: 'html',
+            success: function(data) {
+                $('.site-footer').html(data);
+            },
+            error: function() {
+            }
+        });
+    }
+
     $('.nav-link').hover(function () {
             $(this).addClass('hover')
         }, function () {
