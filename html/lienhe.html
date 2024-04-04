@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<style>
+  body {
+    font-family: playfair display;
+  }
+</style>
+<body class="bg-gray-100">
+<div class="container mx-auto px-6 py-10">
+  <!-- Contact Options -->
+  <div class="grid grid-cols-3 gap-4 mb-10">
+    <!-- Direct Contact -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex items-center justify-center space-x-3 mb-4">
+        <div class="p-3 bg-gray-600 text-white rounded-full">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-center">TRỰC TIẾP</h3>
+      </div>
+      <p class="text-sm text-center">
+        Bạn có thể trực tiếp cần phòng của AQS EVENT để được hỗ trợ giải đáp mọi thắc mắc và từ vấn miễn phí.
+      </p>
+      <p class="text-xs text-center mt-4">Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP.HCM</p>
+    </div>
+    
+    <!-- Hotline -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex items-center justify-center space-x-3 mb-4">
+        <div class="p-3 bg-gray-600 text-white rounded-full">
+          <i class="fas fa-headphones-alt"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-center">HOTLINE 24/7</h3>
+      </div>
+      <p class="text-sm text-center">
+        Hãy liên hệ ngay với AQS EVENT, bạn sẽ được đáp ứng mọi thắc mắc về tổ chức sự kiện từ vấn miễn phí ngay lập tức
+      </p>
+      <p class="text-xs text-center mt-4">+84 123456789</p>
+    </div>
+    
+    <!-- Email -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex items-center justify-center space-x-3 mb-4">
+        <div class="p-3 bg-gray-600 text-white rounded-full">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-center">EMAIL</h3>
+      </div>
+      <p class="text-sm text-center">
+        Nếu bạn không liên hệ được với chúng tôi qua hotline, hãy gửi ngay yêu cầu vào email AQS EVENT sẽ tư vấn giúp bạn.
+      </p>
+      <p class="text-xs text-center mt-4">aqsevent@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="bg-gray-600 p-6 rounded-lg shadow-lg mb-10 space-y-18">
+    <h2 class="text-4xl text-white font-semibold mb-6" align-center>Thông tin liên hệ</h2>
+    <div class="grid grid-cols-2 gap-x-6 gap-8">
+      <input class="p-4 rounded-lg" type="text" placeholder="Tên quý khách ">
+      <input class="p-4 rounded-lg" type="email" placeholder="Email quý khách ">
+      <input class="p-4 rounded-lg" type="tel" placeholder="Số điện thoại liên hệ ">
+      <input class="p-4 rounded-lg" type="text" placeholder="Tên Công ty ">
+      <div class="p-4 rounded-lg bg-white">
+        Dịch vụ quý khách chọn 
+        <select class="w-full mt-2 p-2 border border-gray-200 rounded-lg">
+          <option>Chọn dịch vụ</option>
+          <!-- Add other options here -->
+        </select>
+      </div>
+      <input class="p-4 rounded-lg" type="text" placeholder="Thời gian dự kiến tổ chức ">
+      <input class="p-4 rounded-lg" type="number" placeholder="Số lượng khách dự kiến ">
+      <input class="p-4 rounded-lg" type="text" placeholder="Ngân sách dự kiến ">
+      <textarea class="col-span-2 p-4 rounded-lg" placeholder="Yêu cầu của quý khách"></textarea>
+    </div>
+    <div class="flex justify-center items-center">
+    <button class="bg-red-600 text-white px-6 py-2 rounded-lg mt-4 hover:bg-red-700 transition-colors">YÊU CẦU BÁO GIÁ NGAY</button>
+</div>
+  </div>
+  <div class="flex items-center justify-center space-x-4">
+  </div>
+</div>
+</body>
+</html>
