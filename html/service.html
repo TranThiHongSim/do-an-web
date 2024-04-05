@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -13,6 +12,20 @@
     <title>service</title>
 </head>
 <style>
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+    }
+    .card{
+        width: 16rem; 
+        height: 18rem; 
+        border: none ; 
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
     .card-title {
         color: red;
 
@@ -26,25 +39,13 @@
             font-weight: normal;
         }
 
-        /* body {
-            color: #555;
-            background: #222;
-            text-align: center;
-            font-family: 'Roboto Mono', sans-serif;
-            padding: 1em;
-        } */
-
-        /* h1 {
-            font-size: 2.2em;
-        } */
-
-
         .flip {
             position: relative;
             display: inline-block;
             margin-right: 2px;
             margin-bottom: 1em;
             width: 400px;
+            
         }
 
         .flip > .front,
@@ -56,18 +57,21 @@
             background-position: center!important;
             height: 220px;
             padding: 1em 2em;
-            background: #313131;
+            background: #656565;
             border-radius: 10px;
         }
 
         .flip > .front p {
             font-size: 0.9125rem;
             line-height: 160%;
-            color: #999;
+            color: #ffffff;
         }
 
         .text-shadow {
-            text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+            position: relative; /* Đặt phần tử trong vị trí tương đối */
+            z-index: 1; /* Đảm bảo phần tử sẽ hiển thị trên lớp overlay */
+            align-items: center;
+            margin-top: 100px;
         }
 
         .flip .back {
@@ -81,6 +85,9 @@
             transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
             transition-duration: .5s;
             transition-property: transform, opacity;
+        }
+        .back h3 {
+            color: red;
         }
 
         .flip:hover .front {
@@ -106,64 +113,19 @@
 </style>
 
 <body>
+    <!-- header ở đây é  -->
     <div class="header-wrapped" style="background-color: #242526;">
-        <div class="header container d-flex" style="justify-content: space-between;">
-            <div class="logo">
-                <a href="#"><img src="../img/Untitled-1.png" alt="logo" style="width: 20%; margin-top: 5px;"></a>
-            </div>
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Trang chủ</a>
-                        </li>
-                        <li class="submenu">
-                          <a class="nav-link" href="./service.html">Dịch vụ</a>
-                          <ul class="submenu-content">
-                              <li class="submenu-item">
-                                  <a href="#">Lễ khánh thành</a>
-                              </li>
-                              <li class="submenu-item">
-                                  <a href="#">Hội thảo</a>
-                              </li>
-                              <li class="submenu-item">
-                                  <a href="#">Hội nghị</a>
-                              </li>
-                              <li class="submenu-item">
-                                  <a href="#">Lễ khai trương</a>
-                              </li>    
-                              <li class="submenu-item">
-                                  <a href="#">Tiệc theo chủ đề</a>
-                              </li>
-                          </ul>
-                        </li>                            
-                        <li class="nav-item">
-                            <a class="nav-link" href="./thu-code.html">Giới thiệu</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Báo giá</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./lienhe.html">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                
     </div>
-
-    
-<div class="container p-5  text-dark text-center" id="service">
-    <h1 style="color: red;">Lý do lựa chọn AQS Event?</h1>
-    <div>Với nhiều năm kinh nghiệm trong lĩnh vực tổ chức sự kiện, <b>AQS Event</b> đã trở thành một trong những công ty uy tín và chuyên nghiệp tại Tp.HCM. Với đội ngũ giàu kinh nghiệm và năng lực chuyên môn cao, <b>AQS Event</b> cam kết mang đến cho khách hàng những sự kiện thành công và ấn tượng nhất. Dưới đây là những lý do nổi bật khiến bạn nên lựa chọn <b>AQS Event</b> cho sự kiện của mình.</div> 
-  </div>
-    
-  <div class="container">
+    <div class="container p-5  text-dark text-center" id="service">
+        <h1 style="color: red;">Lý do lựa chọn AQS Event?</h1>
+        <div>Với nhiều năm kinh nghiệm trong lĩnh vực tổ chức sự kiện, <b>AQS Event</b> đã trở thành một trong những công ty uy tín và chuyên nghiệp tại Tp.HCM. Với đội ngũ giàu kinh nghiệm và năng lực chuyên môn cao, <b>AQS Event</b> cam kết mang đến cho khách hàng những sự kiện thành công và ấn tượng nhất. Dưới đây là những lý do nổi bật khiến bạn nên lựa chọn <b>AQS Event</b> cho sự kiện của mình.</div> 
+    </div>
+        
+    <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <div class="card align-items-center text-center" style="width: 16rem; height: 18rem; border: none ; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+            <div class="card align-items-center text-center" >
                 <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;"  alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Đội ngũ CHUYÊN NGHIỆP</h5>
@@ -198,47 +160,110 @@
                 </div>
             </div>
         </div>
-  </div>
+    </div>
+    </div>
 
                 <!-- cái card lật lật -->                
     <div class="container" style="text-align: center;">
-        <h2 style="color: red; margin-top: 40px;">KHÁM PHÁ CÁC DỊCH VỤ TỔ CHỨC SỰ KIỆN CHUYÊN NGHIỆP CỦA CHÚNG TÔI</h2>
+        <h2 style="color: red; margin-top: 40px;">...KHÁM PHÁ CÁC DỊCH VỤ TỔ CHỨC SỰ KIỆN CHUYÊN NGHIỆP CỦA CHÚNG TÔI</h2>
         <p><b>AQSEvent cung cấp đa dạng các dịch vụ tổ chức sự kiện trọn gói: hội nghị, hội thảo, khai trương, khánh thành, động thổ, họp báo, tổ chức lễ kí kết, ra mắt sản phẩm, kỉ niệm công ty, tiệc tri ân, tiệc cuối năm, kỷ niệm thành lập, … Tư vấn phương án, concept chương trình, lên kế hoạch, Timeline, kịch bản chi tiết, làm hồ sơ, thiết kế các hạng mục trong chương trình.</b></p>
         <div class="flip">
-            <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">MOUNTAIN</h1>
+            <div class="front" style="background-image:url(../img/khaitruong.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">LỄ KHAI TRƯƠNG</h2>
             </div>
             <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
+                <h3>TỔ CHỨC LỄ KHAI TRƯƠNG</h3>
+                <p>Lễ khai trương, khánh thành là một sự kiện trọng đại, bởi vì đây là dịp để doanh nghiệp giới thiệu cửa hàng, địa điểm kinh doanh, sản phẩm và dịch vụ tới mọi người.</p>
             </div>
         </div>
         <div class="flip">
-            <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">LAKE</h1>
+            <div class="front" style="background-image: url(../img/thanhlap.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">KỶ NIỆM THÀNH LẬP</h2>
             </div>
             <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
+                <h3>LỄ KỶ NIỆM THÀNH LẬP</h3>
+                <p>Đây là dấu mốc quan trọng để doanh nghiệp của bạn nhìn lại chặng đường phát triển, đánh giá những thành tích đã đạt được sau một quá trình nỗ lực.</p>
             </div>
         </div>
         <div class="flip">
-            <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">OCEAN</h1>
+            <div class="front" style="background-image: url(../img/hoinghi.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">HỘI THẢO, HỘI NGHỊ</h2>
             </div>
             <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
+                <h3>TỔ CHỨC HỘI THẢO, HỘI NGHỊ</h3>
+                <p>Đây là dịp quan trọng để doanh nghiệp kết nối tới truyền thông. Sự kiên này luôn đặt ra những yêu cầu khắt khe ngay từ khâu chọn địa điểm, cách bày trí không gian đến việc chọn lựa người dẫn chương trình, lễ tân.</p>
             </div>
         </div>
-    
-        <br>
-        <br>
-    
-    </div>
-    
-    
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/trian.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">HỘI NGHỊ TRI ÂN</h2>
+            </div>
+            <div class="back">
+                <h3>TỔ CHỨC HỘI NGHỊ TRI ÂN KHÁCH HÀNG</h3>
+                <p>Tổ chức sự kiện hội nghị tri ân khách hàng là dịp để mỗi doanh nghiệp nắm bắt nhu cầu của khách hàng, tiếp tục xây dựng và gắn kết các mối quan hệ bền vững với nhà phân phối, đối tác.</p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/khoicong.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">LỄ KHỞI CÔNG</h2>
+            </div>
+            <div class="back">
+                <h3>TỔ CHỨC LỄ KHỞI CÔNG</h3>
+                <p>Việt Nam là một đất nước truyền thống, rất coi trọng những tín ngưỡng từ xưa đến nay. Cho nên trước mỗi công trình được xây dựng đều được tổ chức lễ khởi công động thổ</p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/ramat.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">RA MẮT SẢN PHẨM</h2>
+            </div>
+            <div class="back">
+                <h3>TỔ CHỨC LỄ RA MẮT SẢN PHẨM</h3>
+                <p>Lễ ra mắt sản phẩm là một trong những sự kiện quan trọng nhất của mỗi doanh nghiệp, đặc biệt là đối với các doanh nghiệp mới ra đời hoặc muốn mở rộng thị trường.</p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/tatnien.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">TIỆC TẤT NIÊN</h2>
+            </div>
+            <div class="back">
+                <h3>TỔ CHỨC TIỆC TẤT NIÊN</h3>
+                <p>Tiệc tất niên, tiệc cuối năm Gala Dinner là sự kiện quan trọng để các thành viên trong công ty tổng kết hoạt động trong một năm và cũng là cơ hội để nhân viên gặp gỡ giao lưu tăng sự đoàn kết.</p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/trian.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">THIẾT KẾ SÂN KHẤU</h2>
+            </div>
+            <div class="back">
+                <h3>THIẾT KẾ THI CÔNG SÂN KHẤU</h3>
+                <p>Với kinh nghiệm nghiều năm trong lĩnh vực thiết kế thi công sân khấu chuyên nghiệp, chúng tôi đã trở thành một thương hiệu thiết kế sân khấu giá rẻ chất lượng, được nhiều khách hàng tin tưởng, đánh giá cao năng lực và tinh thần làm việc nghiêm túc.</p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image:url(../img/trienlam.jpg)">
+                <div class="overlay"></div>
+                <h2 class="text-shadow">THIẾT KẾ GIAN HÀNG</h2>
+            </div>
+            <div class="back">
+                <h3>THIẾT KẾ GIAN HÀNG, TRIỂN LÃM</h3>
+                <p>Ý tưởng thiết kế gian hàng là nơi tốt nhất để bạn bắt đầu lên kế hoạch tham gia triển lãm. Nhà xưởng hiện đại cùng đội ngũ của chúng tôi sẽ giúp ý tưởng của bạn trở thành hiện thực.</p>
+            </div>
+        </div>
 
-  
+        <br>
+        <br>
+
+    </div>
+    <footer class="site-footer" >
+      
+    </footer>
 </body>
 </html>

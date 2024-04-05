@@ -1,158 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-weight: normal;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/stylesheet.css">
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<!-- <!-- <script src="../js/main.js"></script> -->
 
-        body {
-            color: #555;
-            background: #222;
-            text-align: center;
-            font-family: 'Roboto Mono', sans-serif;
-            padding: 1em;
-        }
+<title>Hàng chữ trượt sang trái và dừng lại ở giữa</title>
+<style>
 
-        h1 {
-            font-size: 2.2em;
-        }
-
-        .flip {
-            position: relative;
-            display: inline-block;
-            margin-right: 2px;
-            margin-bottom: 1em;
-            width: 400px;
-        }
-
-        .flip > .front,
-        .flip > .back {
-            display: block;
-            color: white;
-            width: inherit;
-            background-size: cover!important;
-            background-position: center!important;
-            height: 220px;
-            padding: 1em 2em;
-            background: #313131;
-            border-radius: 10px;
-        }
-
-        .flip > .front p {
-            font-size: 0.9125rem;
-            line-height: 160%;
-            color: #999;
-        }
-
-        .text-shadow {
-            text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
-        }
-
-        .flip .back {
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transform: rotateY(-180deg);
-            transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-            transition-duration: .5s;
-            transition-property: transform, opacity;
-        }
-
-        .flip:hover .front {
-            transform: rotateY(180deg);
-        }
-
-        .flip:hover .back {
-            opacity: 1;
-            transform: rotateY(0deg);
-        }
-
-        .flip.flip-vertical .back {
-            transform: rotateX(-180deg);
-        }
-
-        .flip.flip-vertical:hover .front {
-            transform: rotateX(180deg);
-        }
-
-        .flip.flip-vertical:hover .back {
-            transform: rotateX(0deg);
-        }
-    </style>
+</style>
 </head>
 <body>
-    <!-- horizontal -->
+      <!-- header ở đây é  -->
+      <div id="header" class="header container d-flex" style="justify-content: space-between;">
+        <div class="logo">
+            <a href="#"><img src="../img/Untitled-1.png" alt="logo" style="width: 10%; margin-top: 5px;"></a>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="submenu">
+                      <a class="nav-link" href="./service.html">Dịch vụ</a>
+                      <div class="submenu-content">
+                            <a class="submenu-link" href="#">Lễ khánh thành</a>
+                            <a class="submenu-link" href="#">Hội thảo</a>
+                            <a class="submenu-link" href="#">Hội nghị</a>
+                            <a class="submenu-link" href="#">Lễ khai trương</a>
+                            <a class="submenu-link" href="#">Tiệc theo chủ đề</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Giới thiệu</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./baogia.html">Báo giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lienhe.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+      <div class="container-fluid" style="position: relative;">
+        <img src="../img/bg.png" alt="bg" class="img-fluid">
+        <div class="bg-text">
+          <h1><b>CÔNG TY TỔ CHỨC SỰ KIỆN</br>AQS EVENT</b></h1>
+          <p style="padding-left: 350px; padding-right: 350px;">
+            Chúng tôi là một công ty hàng đầu trong lĩnh vực công ty <b>tổ chức sự kiện, tổ chức Event,</b> được biết đến với chất lượng chuyên nghiệp và sự sáng tạo. Sử dụng sức mạnh và tài năng sáng tạo của mình, chúng tôi hỗ trợ khách hàng trong việc lên kế hoạch và thực hiện các sự kiện với chất lượng tuyệt hảo. Chúng tôi đóng vai trò là đối tác sáng tạo cho các thương hiệu mong muốn sự độc đáo và tiên phong</p>
+        </div>
+      </div>        
+      
+      <div class="content-wrapped container" id="top">
+              <!-- Tổng quan á  -->
+          <div class="row" style="margin-top: 40px; margin-bottom: 40px; align-items: center;">
+              <div class="col-lg-4"><img src="../img/tongquan.png" class="img-fluid" alt="tongquan" width="100%"></div>
+           <div class="col-lg-8" style="text-align: left; padding: 60px 60px;" >
+            <div>
+              <h3 style="color: red;"> <b>VỀ CHÚNG TÔI</b></h3>
+              <h2> <b>Công ty tổ chức sự kiện AQS Event</b></h2>
+              <div> <b> Chúng tôi hiểu rằng mỗi sự kiện là một câu chuyện, và nhiệm vụ của chúng tôi là giúp bạn kể câu chuyện đó một cách sáng tạo và ấn tượng nhất.</b></div>
+              <div> <b>Luôn luôn đổi mới, sáng tạo và khác biệt</b> là những giá trị cốt lõi mà chúng tôi đem đến khách hàng của mình. <b>“Gửi trọn niềm tin”</b> là những gì mà chúng tôi tổ chức các chương trình <b style="color: red;">sự kiện, hội thảo, hội nghị, khai trương, lễ động thổ</b> hay các buổi <b style="color: red;">tiệc theo chủ đề</b>, các chương trình ấn tượng, biểu diễn chuyên nghiệp, ấn tượng. Mỗi sự kiện do AQS event tổ chức luôn mang dấu ấn riêng, thể hiện sự kỳ công, sáng tạo và chuyên nghiệp.</div>
+            </div>
+          </div>    
+          </div>
+      </div>
 
-    <h4>Horizontal Flip</h4>
-    <div class="flip">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">MOUNTAIN</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
-    <div class="flip">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">LAKE</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
-    <div class="flip">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">OCEAN</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
+  <script>
+        (function() {
+    var header = new Headroom(document.querySelector("#header"), {
+        tolerance: 5,
+        offset : 205,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
 
-    <br>
-    <br>
-
-    <!-- vertical -->
-  
-    <h4>Vertical Flip</h4>
-    <div class="flip flip-vertical">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">FOREST</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
-    <div class="flip flip-vertical">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">TRACK</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
-    <div class="flip flip-vertical">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-            <h1 class="text-shadow">SWAMP</h1>
-        </div>
-        <div class="back">
-            <h2>Angular</h2>
-            <p>Good tools make application development quicker and easier to maintain than if you did everything by hand.</p>
-        </div>
-    </div>
+    var bttHeadroom = new Headroom(document.getElementById("btt"), {
+        tolerance : 0,
+        offset : 500,
+        classes : {
+            initial : "slide",
+            pinned : "slide--reset",
+            unpinned : "slide--down"
+        }
+    });
+    bttHeadroom.init();
+}());
+    </script>
 </body>
 </html>

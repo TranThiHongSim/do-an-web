@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>Báo giá</title>
+
+    <style>
+        .form-border {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+        }
+        .yeucau {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-wrapped" style="background-color: #242526;">
+        </div>
+    </header>
+    <!-- Giới thiệu é-->
+    <div class="container-fluid" style="position: relative;">
+        <img src="../img/baogia.jpg" alt="bg" style="width: 100%;">
+        <div class="overlay"></div>
+        <div class="yeucau">
+        <h1><b>YÊU CẦU KỊCH BẢN VÀ BÁO GIÁ</b></h1>
+        </div>
+    </div>        
+
+    <div class="container mt-5">
+        <h4 class="text-center text-danger mb-4"><b>Cảm ơn bạn đã quan tâm đến dịch vụ của AQS Event</b></h4>
+        <p class="text-center">Để nhận báo giá tổ chức sự kiện trọn gói cũng như các dịch vụ khác, vui lòng điền thông tin của bạn theo mẫu phía bên dưới.</p>
+        <p class="text-center">Ngay khi nhận được thông tin, chúng tôi sẽ phản hồi tới bạn trong thời gian sớm nhất.</p>
+        <p class="text-center mb-5">Chúng tôi cam kết bảo mật thông tin của bạn và không chia sẻ thông tin của bạn với bất kỳ bên thứ ba nào.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-border">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="number" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="event">Loại sự kiện:</label>
+                                    <input type="text" class="form-control" id="event" name="event" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Ngày tổ chức:</label>
+                                    <input type="date" class="form-control" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location">Địa điểm:</label>
+                                    <input type="text" class="form-control" id="location" name="location" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="guest">Số lượng khách mời:</label>
+                                    <input type="text" class="form-control" id="guest" name="guest" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="budget">Ngân sách dự kiến:</label>
+                                    <input type="text" class="form-control" id="budget" name="budget" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Yêu cầu khác:</label>
+                            <input type="text" class="form-control" id="note" name="note">
+                        </div>
+                        <!-- <button type="submit" class="btn btn-danger btn-block">Gửi yêu cầu</button> -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger">Gửi yêu cầu</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer" >
+      
+    </footer>
+</body>
+</html>
