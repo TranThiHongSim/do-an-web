@@ -3,75 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
     <title>AQS</title>
-    <style>
-        body {
-            font-family: "Playfair Display";
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            font-size: 20px;
-            justify-content: center;
-            background-color: #e4e3e3; 
-        }
-        .container {
-            margin: 0;  
-            width: 100%;
-            justify-content: center
-        }
-        .image-group {
-            font-size: 20px;
-            margin: 150px 200px 0 200px;
-            display: flex; /* Hiển thị ảnh và chữ cùng hàng */
-            align-items: center; /* Canh giữa theo chiều dọc */
-            text-align: center;
-        }
-        .team-member {
-            display: inline-block;
-            width: 25%;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .team-member h3 {
-            margin: 0;
-            font-size: 20px;
-            text-align: center;
-        }
-        .team-member p {
-            margin: 0;
-            font-size: 16px;
-            text-align: center;
-            color: #777;
-        }
-        .i-container {
-            text-align: center;
-            background-color: white;
-            background-size: 90%;
-            width: 100%;
-            margin: 100px 0 0 0;
-            padding: 5px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="header-wrapped">
+
+    </div>
+    <div class="">
         <!-- Đầu trang -->
-        <div style="background-image:url('image/anh-dau-trang.jpg'); 
-                    background-size: 100%;
+        <section class="page-title-wrap page-title-wrap-bg" style="background-image: url(../img/dautrang.jpg)"></section>
+
+        <div style="background-image:url('../img/dautrang.jpg'); 
+                    background-size: cover;
                     background-repeat: no-repeat; 
+                    background-position: center;
                     padding: 300px; 
                     border-radius: 10px;">
         </div>
@@ -81,12 +34,14 @@
                     margin: -80px 150px; 
                     background-color: white;
                     box-shadow: 10px 20px 20px #d4d4d4;">
-            <h1>AQS Event</h1>
+            <div class="name">
+                <span style="font-size: 50px">AQS EVENT</span>  
+            </div>
             <p>Nơi mọi chi tiết đều quan trọng, mọi khoảnh khắc đều có giá trị.</p>
         </div>
         <!-- Hình ảnh và mục tiêu -->
         <div class="image-group">
-            <img style="max-width:300px; float: left; border-radius: 10px; margin-right: 100px;" src="../image/anh-muc-tieu.jpg" alt="">
+            <img style="max-width:450px; float: left; border-radius: 10px; margin-right: 100px;" src="../img/anh-muc-tieu.jpg" alt="">
 
             <div>
                 <h1>MỤC TIÊU</h1>
@@ -112,12 +67,12 @@
                     sự sáng tạo và ý nghĩa cuộc sống, từ đó tạo ra những ấn tượng và kỷ niệm không thể quên.
                 </span>
             </div>
-            <img style="max-width:300px; float: right; border-radius: 10px; margin-left: 100px;" src="../image/anh-tam-nhin.jpg" alt="">
+            <img style="max-width:450px; float: right; border-radius: 10px; margin-left: 100px;" src="../img/anh-tam-nhin.jpg" alt="">
         </div>
 
         <!-- Hình ảnh và Sứ mệnh -->
         <div class="image-group">
-            <img style="max-width:300px; float: left; border-radius: 10px; margin-right: 100px;" src="../image/anh-su-menh.jpg" alt="">
+            <img style="max-width:450px; float: left; border-radius: 10px; margin-right: 100px;" src="../img/anh-su-menh.jpg" alt="">
 
             <div>
                 <h1>SỨ MỆNH</h1>
@@ -133,33 +88,36 @@
 
         <!-- Đội ngũ -->
         <div class="i-container">
-            <h1 style="text-align: center; margin-top:10px;"> ĐỘI NGŨ </h1>
-
+            <h1> NHÀ SÁNG LẬP </h1>
+        
             <div class="team-member">
-                <img src="../image/quyen.jpg" class="center">
+                <!-- <div class="thu-nghiem-zoom">  zoom -->
+                    <img src="../img/quyen.jpg" class="center">
                     <h3>Trương Tiểu Quyên</h3>
                     <h3>FOUNDER</h3>
                     <p>“Ngoài các sự kiện, chúng tôi tạo ra những trải nghiệm.”</p>
+                <!-- </div>zoom -->
             </div>
 
             <div class="team-member">
-                <img src="../image/an.jpg" class="center">
+                <img src="../img/an.jpg" class="center">
                     <h3>Hồ Nguyễn Khánh An</h3>
                     <h3>FOUNDER</h3>
                     <p>“Tạo ra điều gì đó từ không gì”</p>
             </div>
 
             <div class="team-member">
-                <img src="../image/sim.jpg" class="center">
+                <img src="../img/sim.jpg" class="center">
                     <h3>Trần Thị Hồng Sim</h3>
                     <h3>FOUNDER</h3>
                     <p>“Khám phá sự độc đáo - Sáng tạo từng chi tiết!”</p>
             </div>
+        
         </div>
 
     </div>
+    <footer class="site-footer">
 
-
-
+    </footer>
 </body>
 </html>
