@@ -24,22 +24,4 @@ $(document).ready(function() {
             }
         });
     }
-
-    $('.nav-link').hover(function () {
-            $(this).addClass('hover')
-        }, function () {
-            var parent = $(this).parent()
-            if(!parent.hasClass('submenu')){
-                $(this).removeClass('hover')
-            }
-            else{
-                $('.submenu').mouseleave(function () {
-                    if (!$(this).find('.submenu-content').is(':hover')) {
-                        $(this).find('.nav-link').removeClass('hover');
-                    }
-                });
-            }
-        }
-        );
-
 })
