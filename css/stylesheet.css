@@ -39,11 +39,11 @@ body {
   width: 0;
   height: 2px;
   background-color: aliceblue;
-  transition: width 0.3s;
+  transition: width 0.5s;
 }
 
-.nav-item:hover{
-  background-color: #2f2b2b;
+.nav-link:hover{
+  background-color: #242526 !important;
 }
 
 .nav-link:hover::after{
