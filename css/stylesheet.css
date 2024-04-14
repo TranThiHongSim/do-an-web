@@ -1,21 +1,11 @@
-.{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-    /* Adjust the path to your font file */
-    url('fonts/PlayfairDisplay-Regular.woff') format('woff');
-  /* Provide fallback formats if needed */
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, 'Noto Sans', Roboto;
   font-size: 20px;
 }
 
@@ -78,23 +68,35 @@ li {
 
 .so {
   font-size: 50px;
-  color: red
+  color: red;
+  font-weight: bold;
+}
+.chu{
+  color: gray
 }
 
 .bg-gray {
   background-color: #e2e2e2;
   position: absolute;
-  top: -30px;
+  top: -70px;
   right: 0px;
   z-index: -1;
-  height: 269px;
+  height: 300px;
   width: 100%;
 }
 
 .feedback {
-  color: #979797
+  color: #979797;
+  height: 600px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-
+.feedback h4 {
+  color: #505050;
+  text-align: center;
+}
+.feedback small{
+  color: rgb(78, 77, 77)
+}
 .site-footer {
   background-color: #242526;
   padding: 45px 0 20px;
