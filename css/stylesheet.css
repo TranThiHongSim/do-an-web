@@ -1,4 +1,4 @@
-. {
+.{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +16,7 @@
 
 body {
   font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -106,22 +107,23 @@ li {
 
 .footer-links {
   padding-left: 0;
-  list-style: none
+  list-style: none;
+  /* text-align: center; */
 }
 
 .footer-links li {
   display: block
 }
 
-.footer-links a {
+/* .footer-links a {
   color: #737373
-}
+} */
 
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: rgb(234, 255, 0);
-  text-decoration: none;
+  background-color: aliceblue;
+  /* color: #1e0707 !important; */
 }
 
 .footer-links.inline li {
@@ -143,7 +145,8 @@ li {
 }
 
 .copyright-text {
-  margin: 0
+  margin: 0;
+  text-align: center
 }
 
 @media (max-width:991px) {
