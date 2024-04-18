@@ -322,3 +322,20 @@ li {
   z-index: 1;
   width: 400px;
 }
+
+.service-info{
+  border-bottom: 1px solid #d5d5d5;
+  padding: 30px;
+}
+
+.service-form-contact{
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+  margin: 40px 0px;
+}
+
+.form-number{
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #d5d5d5;
+}
