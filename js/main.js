@@ -24,4 +24,13 @@ $(document).ready(function() {
             }
         });
     }
+
 })
+document.getElementById('btn-search').addEventListener('click', function() {
+    var searchBar = document.getElementById('search-bar');
+    if (searchBar.style.display === 'none') {
+        searchBar.style.display = 'block';
+    } else {
+        searchBar.style.display = 'none';
+    }
+});
