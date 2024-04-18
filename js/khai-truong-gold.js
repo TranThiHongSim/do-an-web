@@ -54,8 +54,9 @@ $(document).ready(function() {
     $('#nuocUong').change(function(){
         thanhTien('nuocUong', 'tienNuocUong', 'giaNuocUong');
     });
-
-
+    $('#thoiGian').change(function(){
+        thanhTien('thoiGian', 'tienThoigian', 'giaThoigian');
+    });
 
     function thanhTien(id, thanhTien, gia) {
         var gia = $('#' + gia).html().split(' ')[0].split('.').join('');
@@ -76,8 +77,11 @@ $(document).ready(function() {
         var tienKhachMoi = $('#tienKhachMoi').html().split(' ')[0].split('.').join('');
         var tienAmNhac = $('#tienAmNhac').html().split(' ')[0].split('.').join('');
         var tienNuocUong = $('#tienNuocUong').html().split(' ')[0].split('.').join('');
+        var tienThoigian = $('#tienThoigian').html().split(' ')[0].split('.').join('');
 
-        tongTien = parseInt(tienBackDrop) + parseInt(tienHoaTuoi) + parseInt(tienAmThanhAnhSang) + parseInt(tienMC) + parseInt(tienKhachMoi) + parseInt(tienAmNhac) + parseInt(tienNuocUong);
+        console.log(tienThoigian);
+
+        tongTien = parseInt(tienBackDrop) + parseInt(tienHoaTuoi) + parseInt(tienAmThanhAnhSang) + parseInt(tienMC) + parseInt(tienKhachMoi) + parseInt(tienAmNhac) + parseInt(tienNuocUong) + parseInt(tienThoigian);
         $('#tongTien').html(formatCurrency(tongTien) + " VND");
         // console.log(parseInt($('#tongTien').html().split(' ')[0].split('.').join('')));
         tinhTienCoc();
