@@ -1,0 +1,68 @@
+.taikhoan {
+    background-color: #ffffff;
+    color: #6d6d6d;
+    /* padding: 20px; */
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(118, 118, 118, 0.1);
+    text-align: left;
+    align-items: end;
+
+}
+
+.modal-dialog {
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    font-size:15px;
+    box-sizing: border-box;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.taikhoan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 230px;
+    width: 85%;
+}
+
+.label-taikhoan {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+/* .form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+.form-group input[type="file"] {
+    width: auto;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

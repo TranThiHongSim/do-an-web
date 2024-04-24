@@ -99,7 +99,7 @@ $(document).ready(function() {
     }
 
     var hoTen = $('#hoTen')
-    hoTen.blur(checkHoTen); 
+    // hoTen.blur(checkHoTen); 
 
     function checkHoTen(){
         hoTenValue = hoTen.val();
@@ -111,7 +111,7 @@ $(document).ready(function() {
     }
 
     var email = $('#email')
-    email.blur(checkEmail);
+    // email.blur(checkEmail);
 
     function checkEmail(){
         emailValue = email.val();
@@ -123,7 +123,7 @@ $(document).ready(function() {
     }
 
     var sdt = $('#sdt')
-    sdt.blur(checkSDT);
+    // sdt.blur(checkSDT);
 
     function checkSDT(){
         sdtValue = sdt.val();
@@ -135,7 +135,7 @@ $(document).ready(function() {
     }
 
     var diaChi = $('#tenCT')
-    diaChi.blur(checkDiaChi);
+    // diaChi.blur(checkDiaChi);
 
     function checkDiaChi(){
         diaChiValue = diaChi.val();
@@ -147,7 +147,7 @@ $(document).ready(function() {
     }
 
     var date = $('#date')
-    date.blur(checkDate);
+    // date.blur(checkDate);
 
     function checkDate(){
         var date = $('#date').val();
@@ -158,15 +158,17 @@ $(document).ready(function() {
         return true;
     }
 
-    $('#btnSubmit').click(function (e) { 
-        if(checkHoTen() && checkEmail() && checkSDT() && checkDiaChi()){
-            alert('Đặt lịch thành công');
-            return true;
-        }
-        alert('Vui lòng nhập đủ thông tin.');
-        return false;
+    // $('#btnSubmit').click(function (e) { 
+    //     if(checkHoTen() && checkEmail() && checkSDT() && checkDiaChi()){
+    //         alert('Đặt lịch thành công');
+    //         return true;
+    //     }
+    //     alert('Vui lòng nhập đủ thông tin.');
+    //     return false;
 
-    });
+    // });
+
+    
 })
 
 document.addEventListener("DOMContentLoaded", function () {
