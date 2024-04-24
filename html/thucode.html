@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,146 +10,191 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
-    <title>Thanh toán dịch vụ</title>
+    <title>HỘI THẢO HỘI NGHỊ</title>
+</head>
 <style>
+    .card {
+        margin: 70px;
+    }
 
-    *{
-        font-family: Arial, sans-serif;
-        font-size: small;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
+    .doan {
+        margin-bottom: 10px;
     }
-    .taikhoan {
-        background-color: #ffffff;
-        color: #6d6d6d;
-        padding: 20px;
-        width: 350px;
-        height: 170px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(118, 118, 118, 0.1);
-        text-align: left;
-        align-items: end;
 
-    }
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .title {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .col {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .form-group {
-        margin-bottom: 15px;
-    }
-    .form-group label {
-        font-weight: bold;
-    }
-    /* .form-group input[type="text"],
-    .form-group input[type="number"] {
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    } */
-    .form-group input[type="file"] {
-        width: auto;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Màu đen với độ mờ 50% */
     }
-    .form-group button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+
+    .slideright {
+        position: relative;
+        animation: slideFromRight 5s ease-in-out;
+        /* Thêm 'infinite' để lặp lại hiệu ứng */
+    }
+
+    @keyframes slideFromRight {
+        0% {
+            right: -110%;
+        }
+
+        50% {
+            right: 0%;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+
+    .card {
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
     }
 </style>
-</head>
+
 <body>
     <!-- header ở đây é  -->
     <div class="header-wrapped" style="background-color: #242526;">
-    
-    </div>
-    <div class="container" style="background-color: rgba(241, 246, 255, 0.753);margin-top: 50px; margin-bottom: 50px ;border-radius: 20px;">
-        <!-- <div style="padding: 350px; margin-top: 30px; margin-bottom: 30px; background-color: #ffffff; border-radius: 15px;">
-            
-        </div> -->
-        <h1 class="title" style="font-size: 50px;">THANH TOÁN DỊCH VỤ</h1>
-        <div class=" row">
-            <div class="col" style="text-align: center;">
-                <div style="position: relative;" >
-                    <span style="display: block;"><b>THÔNG TIN TÀI KHOẢN NGÂN HÀNG:</b></span>
-                    <div style="position: absolute;">
-                        <img src="../img/thenganhang.png" alt="bank" width="50%">
-                    </div>
-                    <div style="height: 120px; "></div>
-                    <div class=" row taikhoan" style="margin: 0 120px;">
-                        <div class="col-6">
-                            <span style="display: block;"><b>SỐ TÀI KHOẢN:</b></span>
-                            <span style="display: block;"><b>TÊN NGÂN HÀNG:</b></span>
-                            <span style="display: block;"><b>CHỦ TÀI KHOẢN:</b></span>             
-                        </div>
-                        <div class="col-6">
-                            <span style="display: block;">070120109144</span>
-                            <span style="display: block;">SACOMBANK</span>
-                            <span style="display: block;">TRẦN THỊ HỒNG SIM</span>             
 
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <span style="display: block; margin-top: 20px; margin-bottom: 20px;"><b>QUÉT MÃ QR ĐỂ THANH TOÁN</b></span>
-                    <img src="../img/QRthanhtoan.jpg" alt="qr" width="50%">
+    </div>
+    <!-- cái chỗ đây là content é -->
+    <!-- Giới thiệu é-->
+    <div class="container-fluid" style="position: relative;">
+        <div class="overlay"></div>
+        <img src="../img/bghoithao.jpg" alt="bg" class="img-fluid">
+        <div class="bg-text fadeout" style="align-items: center;">
+            <h1 style="margin-top: 50px;"><b>DỊCH VỤ TỔ CHỨC HỘI THẢO, HỘI NGHỊ</b></h1>
+            <p style="padding-left: 200px; padding-right: 200px; text-align: center;">
+                Bạn đang có nhu cầu <b>tổ chức hội thảo</b> nhưng không biết tìm đơn vị <b style="color: red;">tổ chức
+                    sự kiện</b> nào uy tín? Bạn muốn buổi hội thảo được tổ chức chỉnh chu, mang lại hiệu quả nhằm nâng
+                cao chất lượng, dịch vụ sản phẩm kế hoạch. Hãy liên hệ với <b style="color: red;">công ty tổ chức sự
+                    kiện AQS Event</b> để có được bản kế hoạch chi tiết cho sự kiện.</p>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container ">
+        <h1 class="slideright" style="margin-top: 40px;"><b>Dịch vụ tổ chức hội thảo bài bản tại AQS Event</b></h1>
+        <p class="doan slideright">Với những doanh nghiệp kinh doanh, cho ra mắt dịch vụ, sản phẩm mới việc tạo sự kiện,
+            hội
+            thảo
+            quảng bá, giới thiệu sản phẩm vô cùng cần thiết. Để cho hội thảo tổ chức mang lại hiệu quả cao, tiếp cận
+            khách hàng chuẩn xác hơn bạn cần thuê đơn vị làm sự kiện, hội thảo uy tín.</p>
+        <p class="doan slideright">
+            Công ty tổ chức sự kiện AzEvent với nhiều năm kinh nghiệm chuyên tổ chức sự kiện, hội thảo chuyên nghiệp
+            được nhiều doanh nghiệp lớn biết đến. Để mang tới hiệu quả của việc tổ chức hội thảo, công ty tổ chức sự
+            kiện AzEvent đã không ngừng nâng cao chất lượng dịch vụ, mang tới cho bạn sự hài lòng.</p>
+        <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+            <div class="col-lg-6">
+                <img src="../img/hoithao1.png" alt="hoithao" width="600px" height="500px">
+            </div>
+            <div class="col-lg-6"
+                style="justify-content: space-between;  align-items: center; padding: -1px 35px; margin: 0px;">
+                <h4 style="color: red;"><b>SETUP TRANG THIẾT BỊ TỔ CHỨC HỘI NGHỊ HỘI THẢO CHU ĐÁO, KỸ LƯỠNG</b></h4>
+                <p class="doan">Quá trình chuẩn bị chiếm đến 50% thành công của một chương trình hội nghị hội thảo. Vì
+                    vậy, AQS Event luôn tiến hành tổng duyệt cẩn thận cho tất cả các sự kiện hội nghị hội thảo để đánh
+                    giá và dự phòng kế hoạch giải quyết tối ưu nhất cho mọi tình huống có thể xảy ra.
+                </p>
+                <p class="doan">Ngoài ra, trước mỗi sự kiện, AQS Event luôn chuẩn bị một cách kỹ lưỡng. Tài liệu, biển
+                    tên, quà tặng, hoa tươi, sản phẩm trưng bày… được sắp xếp đúng vị trí một cách trang trọng và thẩm
+                    mỹ.
+                </p>
+                <p class="doan">Các thiết bị âm thanh, ánh sáng, sân khấu, hội họp trực tuyến hoặc ngoại tuyến đều được
+                    setup và kiểm tra trước khi chương trình diễn ra ít nhất 3 giờ.</p>
+                <p>Nhân sự bao gồm đội ngũ PG, MC, ca sĩ luôn có mặt trước sự kiện ít nhất 1 giờ.</p>
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
+            <div class="col-lg-6" style="padding: -1px 35px; margin: 0px;">
+                <h4 style="color: red;"><b>KỊCH BẢN CHƯƠNG TRÌNH HỘI NGHỊ, HỘI THẢO SÁNG TẠO</b></h4>
+                <P class="doan">Dựa trên khảo sát, có đến 70% khách mời thường rời đi trước khi chương trình hội
+                    nghị hoặc hội thảo kết thúc. Nhiều người tin rằng việc tặng quà hay cung cấp phiếu giảm giá
+                    có thể giữ chân họ, nhưng nguyên nhân chính thường xuất phát từ việc thiếu giá trị và sức
+                    hút của nội dung và kịch bản chương trình.
+                </P>
+                <P class="doan">
+                    Khách mời cần thời gian để giải phóng cơ thể sau nhiều giờ phải ngồi yên. Họ cũng cần thư
+                    giãn tinh thần sau thời gian dài tập trung lắng nghe diễn giả. Đồng thời, họ cần sự hướng
+                    dẫn để giúp họ trở về thực tại và tránh được cảm giác buồn ngủ đang rình rập.
+                </P>
+                <P class="doan">
+                    Với 10 năm kinh nghiệm tổ chức hội nghị và hội thảo, AQS Event cam kết tư vấn và xây dựng
+                    cho bạn một kịch bản chi tiết cho chương trình hội nghị hoặc hội thảo. Kịch bản này sẽ được
+                    thiết kế với thời lượng hợp lý, nội dung được sắp xếp một cách logic, kết hợp các yếu tố bất
+                    ngờ và hấp dẫn để thu hút và giữ chân khách mời đến phút cuối cùng.
+            </div>
+            <div class="col-lg-6">
+                <img src="../img/hoithao2.png" alt="hoithao" width="600px" height="500px">
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+            <div class="col-lg-6">
+                <img src="../img/hoithao3.png" alt="hoithao" width="600px" height="500px">
+            </div>
+            <div class="col-lg-6"
+                style="justify-content: space-between;  align-items: center; padding: -1px 35px; margin: 0px;">
+                <h4 style="color: red;"><b>TƯ VẤN ĐỊA ĐIỂM TỔ CHỨC HỘI NGHỊ HỘI THẢO SANG TRỌNG, ĐẲNG CẤP</b></h4>
+                <p class="doan">Trong quá trình tổ chức sự kiện, những khó khăn như vấn đề di chuyển không thuận tiện,
+                    cung cấp chỗ đậu xe hạn chế hoặc không gian hẹp khó quan sát có thể ảnh hưởng đến sự hứng thú của
+                    khách mời tham dự buổi hội nghị hoặc hội thảo của bạn. Vì lý do này, AzEvent khuyên bạn nên chọn các khách sạn hoặc trung tâm hội nghị hội thảo cao cấp và sang trọng, đạt chuẩn chất lượng 45, với vị trí dễ tìm, quy mô phù hợp và tích hợp đầy đủ các tiện ích cần thiết.
+                </p>
+                <p>Với kinh nghiệm là đối tác đáng tin cậy trong lĩnh vực tổ chức sự kiện tại TP. HCM, AQS Event có mối
+                    liên kết với hàng trăm địa điểm uy tín. Chúng tôi sẵn lòng tư vấn cho bạn về lựa chọn địa điểm phù
+                    hợp như vậy. Bạn có thể trò chuyện trực tuyến trên trang web của chúng tôi và để lại yêu cầu cũng
+                    như thông tin liên hệ. AzEvent cam kết tư vấn miễn phí cho bạn về địa điểm lý tưởng nhất cho buổi
+                    hội nghị hoặc hội thảo của bạn.
+                </p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="../img/SILVER.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
-            <div class="col">
-                <div style="padding: 20px 20px 20px 20px;">
-                    <span><b>Số tiền bạn cần thanh toán là:</b></span>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="../img/GOLD.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
-                <div class="form-group">
-                    <label for="file">Chọn tệp minh chứng:</label>
-                    <input type="file" id="file" name="file" onchange="previewImage()">
-                    <img id="preview" src="#" alt="Hình ảnh minh chứng" style="display: none; max-width: 100%; margin-top: 10px;">
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="../img/PLATINUM.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
         </div>
-        <div class="form-group" style="text-align: center;">
-            <button type="button">Xác nhận thanh toán</button>
-        </div>
+
     </div>
+    <!-- site footer -->
+        <footer class="site-footer" >
+      
+    </footer>
 
-    <script>
-        function previewImage() {
-            var preview = document.getElementById('preview');
-            var file = document.getElementById('file').files[0];
-            var reader = new FileReader();
-
-            reader.onloadend = function () {
-                preview.src = reader.result;
-                preview.style.display = 'block';
-            }
-
-            if (file) {
-                reader.readAsDataURL(file);
-            } else {
-                preview.src = '';
-                preview.style.display = 'none';
-            }
-        }
-    </script>
 </body>
+
 </html>

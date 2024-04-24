@@ -339,3 +339,104 @@ li {
   padding-left: 10px;
   border: 1px solid #d5d5d5;
 }
+.fadeout {
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+  /* Sử dụng 'forwards' để giữ hiệu ứng ở trạng thái cuối cùng */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+.zoom-in-effect {
+  overflow: hidden;
+  position: relative;
+  animation: zoom-in 10s;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.slideright {
+  position: relative;
+  animation: slideFromRight 8s ease-in-out;
+  /* Thêm 'infinite' để lặp lại hiệu ứng */
+}
+
+@keyframes slideFromRight {
+  0% {
+      right: -110%;
+  }
+
+  50% {
+      right: 0%;
+  }
+
+  100% {
+      right: 0;
+  }
+}
+.slideleft {
+  position: relative;
+  animation: slideFromLeft 8s ease-in-out;
+  /* Thêm 'infinite' để lặp lại hiệu ứng */
+}
+
+@keyframes slideFromLeft {
+  0% {
+      left: -110%;
+  }
+
+  50% {
+      left: 0%;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+.slide-up-effect {
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slide-up 1s ease forwards;
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-up-effect {
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slide-up 1s ease forwards;
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    /* Ẩn các cột ban đầu */
+    .testimonial-item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  /* Hiệu ứng rõ dần */
+  .testimonial-item {
+    transition-delay: 0.2s; /* Thêm độ trễ cho hiệu ứng rõ dần */
+}

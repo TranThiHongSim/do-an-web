@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,162 +14,186 @@
 </head>
 <style>
     .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Màu đen với độ mờ 50% */
     }
-    .card{
-        width: 17rem; 
-        height: 22rem; 
-        border: none ; 
+
+    .card {
+        width: 17rem;
+        height: 22rem;
+        border: none;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
+    }
+
     .card-title {
         color: red;
 
     }
+
     .card-text {
         color: rgb(82, 82, 82);
     }
+    
+
     /* css của card lật lật */
     * {
-            box-sizing: border-box;
-            font-weight: normal;
-        }
+        box-sizing: border-box;
+        font-weight: normal;
+    }
 
-        .flip {
-            position: relative;
-            display: inline-block;
-            margin-right: 2px;
-            margin-bottom: 1em;
-            width: 400px;
-            font-size: 16px;
-            
-        }
+    .flip {
+        position: relative;
+        display: inline-block;
+        margin-right: 2px;
+        margin-bottom: 1em;
+        width: 400px;
+        font-size: 16px;
 
-        .flip > .front,
-        .flip > .back {
-            display: block;
-            color: white;
-            width: inherit;
-            background-size: cover!important;
-            background-position: center!important;
-            height: 220px;
-            padding: 1em 2em;
-            background: #a4a4a4;
-            /* border-radius: 10px; */
-        }
+    }
 
-        .flip > .front p {
-            font-size: 0.9125rem;
-            line-height: 160%;
-            color: #ffffff;
-        }
+    .flip>.front,
+    .flip>.back {
+        display: block;
+        color: white;
+        width: inherit;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 220px;
+        padding: 1em 2em;
+        background: #a4a4a4;
+        /* border-radius: 10px; */
+    }
 
-        .text-shadow {
-            position: relative; /* Đặt phần tử trong vị trí tương đối */
-            z-index: 1; /* Đảm bảo phần tử sẽ hiển thị trên lớp overlay */
-            align-items: center;
-            margin-top: 100px;
-        }
+    .flip>.front p {
+        font-size: 0.9125rem;
+        line-height: 160%;
+        color: #ffffff;
+    }
 
-        .flip .back {
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transform: rotateY(-180deg);
-            transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-            transition-duration: .5s;
-            transition-property: transform, opacity;
-        }
-        .back h3 {
-            color: red;
-        }
+    .text-shadow {
+        position: relative;
+        /* Đặt phần tử trong vị trí tương đối */
+        z-index: 1;
+        /* Đảm bảo phần tử sẽ hiển thị trên lớp overlay */
+        align-items: center;
+        margin-top: 100px;
+    }
 
-        .flip:hover .front {
-            transform: rotateY(180deg);
-        }
+    .flip .back {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: .5s;
+        transition-property: transform, opacity;
+    }
 
-        .flip:hover .back {
-            opacity: 1;
-            transform: rotateY(0deg);
-        }
+    .back h3 {
+        color: red;
+    }
 
-        .flip.flip-vertical .back {
-            transform: rotateX(-180deg);
-        }
+    .flip:hover .front {
+        transform: rotateY(180deg);
+    }
 
-        .flip.flip-vertical:hover .front {
-            transform: rotateX(180deg);
-        }
+    .flip:hover .back {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
 
-        .flip.flip-vertical:hover .back {
-            transform: rotateX(0deg);
-        }
+    .flip.flip-vertical .back {
+        transform: rotateX(-180deg);
+    }
+
+    .flip.flip-vertical:hover .front {
+        transform: rotateX(180deg);
+    }
+
+    .flip.flip-vertical:hover .back {
+        transform: rotateX(0deg);
+    }
 </style>
 
 <body>
     <!-- header ở đây é  -->
     <div class="header-wrapped" style="background-color: #242526;">
-                
+
     </div>
     <div class="container p-5  text-dark text-center" id="service">
         <h1 style="color: red"><b>Lý do lựa chọn AQS Event?</b></h1>
-        <div>Với nhiều năm kinh nghiệm trong lĩnh vực tổ chức sự kiện, <b>AQS Event</b> đã trở thành một trong những công ty uy tín và chuyên nghiệp tại Tp.HCM. Với đội ngũ giàu kinh nghiệm và năng lực chuyên môn cao, <b>AQS Event</b> cam kết mang đến cho khách hàng những sự kiện thành công và ấn tượng nhất. Dưới đây là những lý do nổi bật khiến bạn nên lựa chọn <b>AQS Event</b> cho sự kiện của mình.</div> 
+        <div>Với nhiều năm kinh nghiệm trong lĩnh vực tổ chức sự kiện, <b>AQS Event</b> đã trở thành một trong những
+            công ty uy tín và chuyên nghiệp tại Tp.HCM. Với đội ngũ giàu kinh nghiệm và năng lực chuyên môn cao, <b>AQS
+                Event</b> cam kết mang đến cho khách hàng những sự kiện thành công và ấn tượng nhất. Dưới đây là những
+            lý do nổi bật khiến bạn nên lựa chọn <b>AQS Event</b> cho sự kiện của mình.</div>
     </div>
 
 
     <div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="card align-items-center text-center" >
-                <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;"  alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Đội ngũ CHUYÊN NGHIỆP</h5>
-                <p class="card-text">Đội ngũ chuyên gia 11 năm kinh nghiệm trực tiếp tư vấn, tổ chức, điều hành và giám sát sự kiện, đảm bảo chuyên nghiệp, nhanh chóng, chính xác.</p>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card align-items-center text-center">
+                    <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Đội ngũ CHUYÊN NGHIỆP</h5>
+                        <p class="card-text">Đội ngũ chuyên gia 11 năm kinh nghiệm trực tiếp tư vấn, tổ chức, điều hành
+                            và giám sát sự kiện, đảm bảo chuyên nghiệp, nhanh chóng, chính xác.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card align-items-center text-center">
+                    <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;"
+                        class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ý tưởng SÁNG TẠO </h5>
+                        <p class="card-text">Với mỗi sự kiện khác nhau, AQS Event luôn tạo ra cho quý khách từng kịch
+                            bản ấn tượng, mới lạ, giúp truyền tải thông điệp của bạn đến khách hàng trong quá trình tổ
+                            chức sự kiện.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card align-items-center text-center">
+                    <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;"
+                        class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chi phí HỢP LÝ</h5>
+                        <p class="card-text">Chúng tôi mong muốn mang lại cho quý khách hàng sự kiện với chi phí được
+                            tối ưu, đồng thời đảm bảo công tác tổ chức diễn ra nhanh chóng, tiết kiệm nhất.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card align-items-center text-center">
+                    <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;"
+                        class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dịch vụ UY TÍN </h5>
+                        <p class="card-text">Chúng tôi có khả năng “chinh phục” mọi yêu cầu về ý tưởng, quy mô, địa
+                            hình, khí hậu, v.v. Chúng tôi biết lường trước và ứng phó tốt mọi tình huống xảy ra.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="card align-items-center text-center" >
-                <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;" class="card-img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Ý tưởng SÁNG TẠO </h5>
-                <p class="card-text">Với mỗi sự kiện khác nhau, AQS Event luôn tạo ra cho quý khách từng kịch bản ấn tượng, mới lạ, giúp truyền tải thông điệp của bạn đến khách hàng trong quá trình tổ chức sự kiện.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card align-items-center text-center">
-                <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;" class="card-img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Chi phí HỢP LÝ</h5>
-                <p class="card-text">Chúng tôi mong muốn mang lại cho quý khách hàng sự kiện với chi phí được tối ưu, đồng thời đảm bảo công tác tổ chức diễn ra nhanh chóng, tiết kiệm nhất.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card align-items-center text-center">
-                <img src="../img/icon/circle-check-solid.svg" style="width: 30px; margin-top: 10px;" class="card-img" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Dịch vụ UY TÍN </h5>
-                <p class="card-text">Chúng tôi có khả năng “chinh phục” mọi yêu cầu về ý tưởng, quy mô, địa hình, khí hậu, v.v. Chúng tôi biết lường trước và ứng phó tốt mọi tình huống xảy ra.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
-                <!-- cái card lật lật -->                
+    <!-- cái card lật lật -->
     <div class="container" style="text-align: center">
-        <h2 style="color: red; margin-top: 40px;"><b>...KHÁM PHÁ CÁC DỊCH VỤ TỔ CHỨC SỰ KIỆN CHUYÊN NGHIỆP CỦA CHÚNG TÔI</b></h2>
-        <p><b>AQS Event cung cấp đa dạng các dịch vụ tổ chức sự kiện trọn gói: hội nghị, hội thảo, khai trương, khánh thành, động thổ, họp báo, tổ chức lễ kí kết, ra mắt sản phẩm, kỉ niệm công ty, tiệc tri ân, tiệc cuối năm, kỷ niệm thành lập, … Tư vấn phương án, concept chương trình, lên kế hoạch, Timeline, kịch bản chi tiết, làm hồ sơ, thiết kế các hạng mục trong chương trình.</b></p>
+        <h2 style="color: red; margin-top: 40px;"><b>...KHÁM PHÁ CÁC DỊCH VỤ TỔ CHỨC SỰ KIỆN CHUYÊN NGHIỆP CỦA CHÚNG
+                TÔI</b></h2>
+        <p><b>AQS Event cung cấp đa dạng các dịch vụ tổ chức sự kiện trọn gói: hội nghị, hội thảo, khai trương, khánh
+                thành, động thổ, họp báo, tổ chức lễ kí kết, ra mắt sản phẩm, kỉ niệm công ty, tiệc tri ân, tiệc cuối
+                năm, kỷ niệm thành lập, … Tư vấn phương án, concept chương trình, lên kế hoạch, Timeline, kịch bản chi
+                tiết, làm hồ sơ, thiết kế các hạng mục trong chương trình.</b></p>
         <div class="flip">
             <div class="front" style="background-image:url(../img/khaitruong.jpg)">
                 <div class="overlay"></div>
@@ -176,7 +201,9 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC LỄ KHAI TRƯƠNG</h3>
-                <p><a class="service-item" href="../html/chi-tiet-dich-vu-khai-truong.html">Lễ khai trương</a>, khánh thành là một sự kiện trọng đại, bởi vì đây là dịp để doanh nghiệp giới thiệu cửa hàng, địa điểm kinh doanh, sản phẩm và dịch vụ tới mọi người.</p>
+                <p><a class="service-item" href="../html/chi-tiet-dich-vu-khai-truong.html">Lễ khai trương</a>, khánh
+                    thành là một sự kiện trọng đại, bởi vì đây là dịp để doanh nghiệp giới thiệu cửa hàng, địa điểm kinh
+                    doanh, sản phẩm và dịch vụ tới mọi người.</p>
             </div>
         </div>
         <div class="flip">
@@ -186,7 +213,8 @@
             </div>
             <div class="back">
                 <h3>LỄ KỶ NIỆM THÀNH LẬP</h3>
-                <p>Đây là dấu mốc quan trọng để doanh nghiệp của bạn nhìn lại chặng đường phát triển, đánh giá những thành tích đã đạt được sau một quá trình nỗ lực.</p>
+                <p>Đây là dấu mốc quan trọng để doanh nghiệp của bạn nhìn lại chặng đường phát triển, đánh giá những
+                    thành tích đã đạt được sau một quá trình nỗ lực.</p>
             </div>
         </div>
         <div class="flip">
@@ -196,7 +224,9 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC HỘI THẢO, HỘI NGHỊ</h3>
-                <p>Đây là dịp quan trọng để doanh nghiệp kết nối tới truyền thông. Sự kiên này luôn đặt ra những yêu cầu khắt khe ngay từ khâu chọn địa điểm, cách bày trí không gian đến việc chọn lựa người dẫn chương trình, lễ tân.</p>
+                <p>Đây là dịp quan trọng để doanh nghiệp kết nối tới truyền thông. Sự kiên này luôn đặt ra những yêu cầu
+                    khắt khe ngay từ khâu chọn địa điểm, cách bày trí không gian đến việc chọn lựa người dẫn chương
+                    trình, lễ tân.</p>
             </div>
         </div>
         <div class="flip">
@@ -206,7 +236,8 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC HỘI NGHỊ TRI ÂN KHÁCH HÀNG</h3>
-                <p>Tổ chức sự kiện hội nghị tri ân khách hàng là dịp để mỗi doanh nghiệp nắm bắt nhu cầu của khách hàng, tiếp tục xây dựng và gắn kết các mối quan hệ bền vững với nhà phân phối, đối tác.</p>
+                <p>Tổ chức sự kiện hội nghị tri ân khách hàng là dịp để mỗi doanh nghiệp nắm bắt nhu cầu của khách hàng,
+                    tiếp tục xây dựng và gắn kết các mối quan hệ bền vững với nhà phân phối, đối tác.</p>
             </div>
         </div>
         <div class="flip">
@@ -216,7 +247,8 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC LỄ KHỞI CÔNG</h3>
-                <p>Việt Nam là một đất nước truyền thống, rất coi trọng những tín ngưỡng từ xưa đến nay. Cho nên trước mỗi công trình được xây dựng đều được tổ chức lễ khởi công động thổ</p>
+                <p>Việt Nam là một đất nước truyền thống, rất coi trọng những tín ngưỡng từ xưa đến nay. Cho nên trước
+                    mỗi công trình được xây dựng đều được tổ chức lễ khởi công động thổ</p>
             </div>
         </div>
         <div class="flip">
@@ -226,7 +258,8 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC LỄ RA MẮT SẢN PHẨM</h3>
-                <p>Lễ ra mắt sản phẩm là một trong những sự kiện quan trọng nhất của mỗi doanh nghiệp, đặc biệt là đối với các doanh nghiệp mới ra đời hoặc muốn mở rộng thị trường.</p>
+                <p>Lễ ra mắt sản phẩm là một trong những sự kiện quan trọng nhất của mỗi doanh nghiệp, đặc biệt là đối
+                    với các doanh nghiệp mới ra đời hoặc muốn mở rộng thị trường.</p>
             </div>
         </div>
         <div class="flip">
@@ -236,7 +269,8 @@
             </div>
             <div class="back">
                 <h3>TỔ CHỨC TIỆC TẤT NIÊN</h3>
-                <p>Tiệc tất niên, tiệc cuối năm Gala Dinner là sự kiện quan trọng để các thành viên trong công ty tổng kết hoạt động trong một năm và cũng là cơ hội để nhân viên gặp gỡ giao lưu tăng sự đoàn kết.</p>
+                <p>Tiệc tất niên, tiệc cuối năm Gala Dinner là sự kiện quan trọng để các thành viên trong công ty tổng
+                    kết hoạt động trong một năm và cũng là cơ hội để nhân viên gặp gỡ giao lưu tăng sự đoàn kết.</p>
             </div>
         </div>
         <div class="flip">
@@ -246,7 +280,9 @@
             </div>
             <div class="back">
                 <h3>THIẾT KẾ SÂN KHẤU</h3>
-                <p>Với kinh nghiệm nghiều năm trong lĩnh vực thiết kế thi công sân khấu, chúng tôi đã trở thành một nơi thiết kế sân khấu giá rẻ chất lượng, được nhiều khách hàng tin tưởng, đánh giá cao năng lực và tinh thần làm việc nghiêm túc.</p>
+                <p>Với kinh nghiệm nghiều năm trong lĩnh vực thiết kế thi công sân khấu, chúng tôi đã trở thành một nơi
+                    thiết kế sân khấu giá rẻ chất lượng, được nhiều khách hàng tin tưởng, đánh giá cao năng lực và tinh
+                    thần làm việc nghiêm túc.</p>
             </div>
         </div>
         <div class="flip">
@@ -256,7 +292,8 @@
             </div>
             <div class="back">
                 <h3>THIẾT KẾ GIAN HÀNG, TRIỂN LÃM</h3>
-                <p>Ý tưởng thiết kế gian hàng là nơi tốt nhất để bạn bắt đầu lên kế hoạch tham gia triển lãm. Nhà xưởng hiện đại cùng đội ngũ của chúng tôi sẽ giúp ý tưởng của bạn trở thành hiện thực.</p>
+                <p>Ý tưởng thiết kế gian hàng là nơi tốt nhất để bạn bắt đầu lên kế hoạch tham gia triển lãm. Nhà xưởng
+                    hiện đại cùng đội ngũ của chúng tôi sẽ giúp ý tưởng của bạn trở thành hiện thực.</p>
             </div>
         </div>
 
@@ -264,8 +301,9 @@
         <br>
 
     </div>
-    <footer class="site-footer" >
-      
+    <footer class="site-footer">
+
     </footer>
 </body>
+
 </html>
