@@ -208,14 +208,14 @@ $(document).ready(function () {
 
     function showSearchBar() {
         $('.search-bar').toggleClass('show');
-        var imgElement = $('#btn-search img'); // replace with the selector for your img element
+        var imgElement = $('#btn-search img');
 
     if ($('.search-bar').hasClass('show')) {
-        // If the search bar is shown, change the img src to 'x.png'
         imgElement.attr('src', '../img/icon/close.png');
+        imgElement.addClass('small-icon'); 
     } else {
-        // If the search bar is hidden, change the img src back to 'magnifying-glass.png'
         imgElement.attr('src', '../img/icon/search.png');
+        imgElement.removeClass('small-icon');
     }
     }
 

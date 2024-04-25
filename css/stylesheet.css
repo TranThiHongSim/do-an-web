@@ -300,6 +300,7 @@ li {
   margin-left: 20px;
   margin-right: 20px;
   height: 50px;
+  border: none;
 }
 
 .service-item{
@@ -521,4 +522,9 @@ li {
   border-right: 20px solid transparent;
   border-bottom: 20px solid rgb(255, 255, 255);
   animation: slideDown 0.5s ease-out;
+}
+
+.small-icon {
+  width: 15px; 
+  height: 15px; 
 }
