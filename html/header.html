@@ -31,10 +31,13 @@
                         <a class="nav-link " href="./lienhe.html">Liên hệ</a>
                     </li>
                 </ul>
-                <button class="my-item btn" type="button" style="background-color: transparent;" id="btn-search"><img src="../img/icon/search.png" alt="search-icon" width="30px" ></button>
+
+                <button class="my-item btn" type="button" style="background-color: transparent;" id="btn-search" onclick="showSearchBar()"><img src="../img/icon/search.png" alt="search-icon" width="30px" ></button>
                 <div class="search-bar">
-                    <div class=>
-                        <input class="form-control" type="text" placeholder="Tìm kiếm..." >
+                    <div class="d-flex search-container">
+                        <input class="search-textfield" type="text" placeholder="Tìm kiếm...">
+                        <button class="search-button"></button>
+                        <!-- <img src="../img/magnifying-glass-solid.svg" alt="magnifying-glass-solid" srcset="" width="20px" style="margin-right: 5px"> -->
                     </div>
                 </div>
             </div>

@@ -1,57 +1,62 @@
-$(document).ready(function() {
+$(document).ready(function () {
     pushHeader()
-    function pushHeader(){
+    function pushHeader() {
         $.ajax({
             url: 'header.html',
             dataType: 'html',
-            success: function(data) {
+            success: function (data) {
                 $('.header-wrapped').html(data);
             },
-            error: function() {
+            error: function () {
             }
         });
     }
 
     pushFooter()
-    function pushFooter(){
+    function pushFooter() {
         $.ajax({
             url: 'footer.html',
             dataType: 'html',
-            success: function(data) {
+            success: function (data) {
                 $('.site-footer').html(data);
             },
-            error: function() {
+            error: function () {
             }
         });
     }
 
+    // $('#btn-search').click(function () {
+    //     // $('.search-bar').toggleClass('show');
+    //     console.log('click');
+    // });
+
     tinhTongTien();
 
-    $('#backDrop').change(function(){
+    $('#backDrop').change(function () {
         thanhTien('backDrop', 'tienBackDrop', 'giaBackDrop');
     });
-    
-    $('#hoaTuoi').change(function(){
+
+    $('#hoaTuoi').change(function () {
         thanhTien('hoaTuoi', 'tienHoaTuoi', 'giaHoaTuoi');
     });
-    
-    $('#amThanhAnhSang').change(function(){
+
+    $('#amThanhAnhSang').change(function () {
         thanhTien('amThanhAnhSang', 'tienAmThanhAnhSang', 'giaAmThanhAnhSang');
     });
 
-    $('#mc').change(function(){
+    $('#mc').change(function () {
         thanhTien('mc', 'tienMC', 'giaMC');
     });
 
-    $('#khachMoi').change(function(){
+    $('#khachMoi').change(function () {
         thanhTien('khachMoi', 'tienKhachMoi', 'giaKhachMoi');
     });
 
-    $('#amNhac').change(function(){
+    $('#amNhac').change(function () {
         thanhTien('amNhac', 'tienAmNhac', 'giaAmNhac');
     });
 
-    $('#nuocUong').change(function(){
+    $('#nuocUong').change(function () {
         thanhTien('nuocUong', 'tienNuocUong', 'giaNuocUong');
     });
 
@@ -61,13 +66,13 @@ $(document).ready(function() {
         var gia = $('#' + gia).html().split(' ')[0].split('.').join('');
         var inputValue = $('#' + id).val();
         var tien = formatCurrency(inputValue * parseInt(gia)) + " VND";
-        
+
         $('#' + thanhTien).html(tien);
         tinhTongTien();
     }
-    
-    
-    function tinhTongTien(){
+
+
+    function tinhTongTien() {
         var tongTien = 0;
         var tienBackDrop = $('#tienBackDrop').html().split(' ')[0].split('.').join('');
         var tienHoaTuoi = $('#tienHoaTuoi').html().split(' ')[0].split('.').join('');
@@ -83,15 +88,15 @@ $(document).ready(function() {
         tinhTienCoc();
     }
 
-    $('#tienCoc').change(function(){
+    $('#tienCoc').change(function () {
         tinhTienCoc();
     });
 
-    function tinhTienCoc(){
+    function tinhTienCoc() {
         var tongTien = parseInt($('#tongTien').html().split(' ')[0].split('.').join(''));
         var tienCoc = tongTien * $('#tienCoc').val() / 100;
         $('#tienCanThanhToan').html(formatCurrency(tienCoc) + " VND");
-    
+
     }
 
     function formatCurrency(number) {
@@ -99,11 +104,11 @@ $(document).ready(function() {
     }
 
     var hoTen = $('#hoTen')
-    // hoTen.blur(checkHoTen); 
+    hoTen.blur(checkHoTen);
 
-    function checkHoTen(){
+    function checkHoTen() {
         hoTenValue = hoTen.val();
-        if(hoTenValue == ""){
+        if (hoTenValue == "") {
             $('#tbHoTen').html('*Vui lòng nhập họ tên');
             return false;
         }
@@ -111,11 +116,11 @@ $(document).ready(function() {
     }
 
     var email = $('#email')
-    // email.blur(checkEmail);
+    email.blur(checkEmail);
 
-    function checkEmail(){
+    function checkEmail() {
         emailValue = email.val();
-        if(emailValue == ""){
+        if (emailValue == "") {
             $('#tbEmail').html('*Vui lòng nhập email');
             return false;
         }
@@ -123,11 +128,11 @@ $(document).ready(function() {
     }
 
     var sdt = $('#sdt')
-    // sdt.blur(checkSDT);
+    sdt.blur(checkSDT);
 
-    function checkSDT(){
+    function checkSDT() {
         sdtValue = sdt.val();
-        if(sdtValue == ""){
+        if (sdtValue == "") {
             $('#tbSDT').html('*Vui lòng nhập số điện thoại');
             return false;
         }
@@ -135,11 +140,11 @@ $(document).ready(function() {
     }
 
     var diaChi = $('#tenCT')
-    // diaChi.blur(checkDiaChi);
+    diaChi.blur(checkDiaChi);
 
-    function checkDiaChi(){
+    function checkDiaChi() {
         diaChiValue = diaChi.val();
-        if(diaChiValue == ""){
+        if (diaChiValue == "") {
             $('#tbTenCT').html('*Vui lòng nhập tên công ty');
             return false;
         }
@@ -147,42 +152,70 @@ $(document).ready(function() {
     }
 
     var date = $('#date')
-    // date.blur(checkDate);
+    date.blur(checkDate);
 
-    function checkDate(){
+    function checkDate() {
         var date = $('#date').val();
-        if(date == ""){
+        if (date == "") {
             $('#tbDate').html('*Vui lòng chọn ngày');
             return false;
         }
         return true;
     }
 
-    // $('#btnSubmit').click(function (e) { 
-    //     if(checkHoTen() && checkEmail() && checkSDT() && checkDiaChi()){
-    //         alert('Đặt lịch thành công');
-    //         return true;
-    //     }
-    //     alert('Vui lòng nhập đủ thông tin.');
-    //     return false;
+    $('#btnSubmit').click(function (e) {
+        if (checkHoTen() && checkEmail() && checkSDT() && checkDiaChi()) {
+            alert('Đặt lịch thành công');
+            return true;
+        }
+        alert('Vui lòng nhập đủ thông tin.');
+        return false;
 
-    // });
-
+    });
     
-})
-
-document.addEventListener("DOMContentLoaded", function () {
-    var testimonials = document.querySelectorAll(".testimonial-item");
+    var testimonials = $(".testimonial-item");
 
     // Lặp qua từng cột
-    testimonials.forEach(function (testimonial, index) {
+    testimonials.each(function (index, testimonial) {
         // Đặt thời gian hiển thị cho từng cột
         var delay = index * 1000; // Mỗi cột sẽ xuất hiện sau 1 giây
 
         // Tạo hiệu ứng xuất hiện lần lượt
         setTimeout(function () {
-            testimonial.style.opacity = "1";
-            testimonial.style.transform = "translateY(0)";
+            $(testimonial).css({
+                opacity: "1",
+                transform: "translateY(0)"
+            });
         }, delay);
     });
-});
+})
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     var testimonials = document.querySelectorAll(".testimonial-item");
+
+//     // Lặp qua từng cột
+//     testimonials.forEach(function (testimonial, index) {
+//         // Đặt thời gian hiển thị cho từng cột
+//         var delay = index * 1000; // Mỗi cột sẽ xuất hiện sau 1 giây
+
+//         // Tạo hiệu ứng xuất hiện lần lượt
+//         setTimeout(function () {
+//             testimonial.style.opacity = "1";
+//             testimonial.style.transform = "translateY(0)";
+//         }, delay);
+//     });
+// });
+
+    function showSearchBar() {
+        $('.search-bar').toggleClass('show');
+        var imgElement = $('#btn-search img'); // replace with the selector for your img element
+
+    if ($('.search-bar').hasClass('show')) {
+        // If the search bar is shown, change the img src to 'x.png'
+        imgElement.attr('src', '../img/icon/close.png');
+    } else {
+        // If the search bar is hidden, change the img src back to 'magnifying-glass.png'
+        imgElement.attr('src', '../img/icon/search.png');
+    }
+    }
+

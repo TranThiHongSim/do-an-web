@@ -315,12 +315,17 @@ li {
 
 .search-bar{
   background-color: #242526;
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 100%;
   right: 1%;
   z-index: 1;
   width: 400px;
+  /* height: 100px; */
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px; 
 }
 
 .service-info{
@@ -439,4 +444,81 @@ li {
   /* Hiệu ứng rõ dần */
   .testimonial-item {
     transition-delay: 0.2s; /* Thêm độ trễ cho hiệu ứng rõ dần */
+}
+
+/* @keyframes slideDown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+
+#btn-search{
+  position: relative;
+}
+
+.search-bar {
+  display: none;
+  animation: slideDown 0.5s ease-out;
+}
+
+
+.search-bar.show {
+  display: block;
+  
+}
+
+/* #btn-search::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  /* left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(255, 255, 255);
+} */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.search-textfield {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+.search-button {
+  background-image: url('../img/magnifying-glass-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 20px 20px;
+  border: none;
+  width: 40px;
+  height: 40px; 
+  background-color: #ffffff;
+}
+
+.search-bar::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 90%;
+  transform: translateX(-20px);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(255, 255, 255);
+  animation: slideDown 0.5s ease-out;
 }
