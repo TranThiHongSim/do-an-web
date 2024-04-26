@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="login-viewport">
+        <div class="header-wrapped"></div>
+        <div class="content-wrapped container bg-white"
+            style="width: 60%; margin-top: 10px; margin-bottom: 40px; padding-bottom: 100px; padding-top: 30px;">
+            <div class="container" style="width: 45%;">
+                <ul class="login-tab">
+                    <li class="login-tab-item login-tab-login active" id="goToLogin">
+                        <a>Đăng nhập</a>
+                        <hr style="margin-top: 10px;">
+                    </li>
+                    <li class="login-tab-item login-tab-register" id="goToRegister">
+                        <a>Đăng ký</a>
+                        <hr style="margin-top: 10px;">
+                    </li>
+
+                </ul>
+                <div class="login-form container" style="width: 80%; display: block;">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Tài khoản:</label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Nhập tài khoản..." required>
+                            <span id="tb-username" class="text-danger" style="font-size: 15px; font-style: italic;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Mật khẩu:</label>
+                            <input type="password" id="login-password" name="login-password" class="form-control" placeholder="Nhập mật khẩu..." required>
+                        </div>
+                        <div class="d-flex"
+                            style="justify-content: flex-end; text-decoration: none; font-size: 15px; margin-bottom: 20px;">
+                            <li><a class="text-danger">Quên mật khẩu?</a></li>
+                        </div>
+                        <div class="d-flex" style="justify-content: center;">
+                            <button type="submit" class="btn btn-primary" id="btn-login" style="width: 80%;">Đăng
+                                nhập</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="register-form container" style="width: 80%; display: none;">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="sdt">Số điện thoại:</label>
+                            <input type="text" id="sdt" name="sdt" class="form-control" placeholder="Nhập số điện thoại..." required>
+                            <span class="text-danger" id="tb-sdt" style="font-size: 15px; font-style: italic;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu..." required>
+                            <span class="text-danger" id="tb-password" style="font-size: 15px; font-style: italic;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="repassword">Nhập lại mật khẩu:</label>
+                            <input type="password" id="repassword" name="repassword" class="form-control" placeholder="Nhập lại mật khẩu..." required>
+                            <span class="text-danger" id="tb-repassword" style="font-size: 15px; font-style: italic;"></span>
+                        </div>
+                        <div class="d-flex" style="justify-content: center; margin-top: 40px;">
+                            <button type="submit" class="btn btn-primary" id="btn-register" style="width: 80%;">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer"></div>
+    </div>
+
+</body>
+
+</html>

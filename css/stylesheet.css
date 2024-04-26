@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   font-size: 20px;
 }
 
-.header{
+.header {
   padding: 0px 50px;
   position: relative;
 }
@@ -33,11 +33,11 @@ body {
   transition: width 0.5s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background-color: #242526 !important;
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after {
   width: 100%;
 }
 
@@ -46,12 +46,12 @@ body {
   color: rgb(234, 255, 0) !important;
 }
 
-.submenu-content{
+.submenu-content {
   position: absolute;
   z-index: 1;
   width: 20%;
   top: 75%;
-  border: 1px solid #dedede;  
+  border: 1px solid #dedede;
   border-radius: 5px;
   /* right: -25%; */
   display: none;
@@ -72,7 +72,8 @@ li {
   color: red;
   font-weight: bold;
 }
-.chu{
+
+.chu {
   color: gray
 }
 
@@ -88,14 +89,16 @@ li {
 
 .feedback {
   color: #979797;
-  height: 600px; 
+  height: 600px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+
 .feedback h4 {
   color: #505050;
   text-align: center;
 }
-.feedback small{
+
+.feedback small {
   color: rgb(78, 77, 77)
 }
 
@@ -296,55 +299,56 @@ li {
 }
 
 
-.my-item{
+.my-item {
   margin-left: 20px;
   margin-right: 20px;
   height: 50px;
   border: none;
 }
 
-.service-item{
+.service-item {
   text-decoration: none;
   color: red;
   font-size: 20px;
   display: inline;
 }
 
-.service-item:hover{
+.service-item:hover {
   color: rgb(255, 255, 255);
 }
 
-.search-bar{
+.search-bar {
   background-color: #242526;
   /* display: none; */
   position: absolute;
   top: 100%;
-  right: 1%;
+  right: 7.5%;
   z-index: 1;
   width: 400px;
   /* height: 100px; */
   padding: 10px;
   background-color: #ffffff;
   border: 1px solid #dedede;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
-.service-info{
+.service-info {
   border-bottom: 1px solid #d5d5d5;
   padding: 30px;
 }
 
-.service-form-contact{
+.service-form-contact {
   border-radius: 5px;
   border: 1px solid #d5d5d5;
   margin: 40px 0px;
 }
 
-.form-number{
+.form-number {
   border-radius: 5px;
   padding-left: 10px;
   border: 1px solid #d5d5d5;
 }
+
 .fadeout {
   opacity: 0;
   animation: fadeIn 5s ease-in-out forwards;
@@ -353,13 +357,14 @@ li {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
+
 .zoom-in-effect {
   overflow: hidden;
   position: relative;
@@ -370,10 +375,12 @@ li {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
 }
+
 .slideright {
   position: relative;
   animation: slideFromRight 8s ease-in-out;
@@ -382,17 +389,18 @@ li {
 
 @keyframes slideFromRight {
   0% {
-      right: -110%;
+    right: -110%;
   }
 
   50% {
-      right: 0%;
+    right: 0%;
   }
 
   100% {
-      right: 0;
+    right: 0;
   }
 }
+
 .slideleft {
   position: relative;
   animation: slideFromLeft 8s ease-in-out;
@@ -401,17 +409,18 @@ li {
 
 @keyframes slideFromLeft {
   0% {
-      left: -110%;
+    left: -110%;
   }
 
   50% {
-      left: 0%;
+    left: 0%;
   }
 
   100% {
-      left: 0;
+    left: 0;
   }
 }
+
 .slide-up-effect {
   opacity: 0;
   transform: translateY(50%);
@@ -424,6 +433,7 @@ li {
     transform: translateY(0);
   }
 }
+
 .slide-up-effect {
   opacity: 0;
   transform: translateY(50%);
@@ -436,15 +446,18 @@ li {
     transform: translateY(0);
   }
 }
-    /* Ẩn các cột ban đầu */
-    .testimonial-item {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  /* Hiệu ứng rõ dần */
-  .testimonial-item {
-    transition-delay: 0.2s; /* Thêm độ trễ cho hiệu ứng rõ dần */
+
+/* Ẩn các cột ban đầu */
+.testimonial-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hiệu ứng rõ dần */
+.testimonial-item {
+  transition-delay: 0.2s;
+  /* Thêm độ trễ cho hiệu ứng rõ dần */
 }
 
 /* @keyframes slideDown {
@@ -458,7 +471,7 @@ li {
   }
 } */
 
-#btn-search{
+#btn-search {
   position: relative;
 }
 
@@ -470,7 +483,7 @@ li {
 
 .search-bar.show {
   display: block;
-  
+
 }
 
 /* #btn-search::after {
@@ -499,14 +512,15 @@ li {
   border: none;
   outline: none;
 }
+
 .search-button {
   background-image: url('../img/magnifying-glass-solid.svg');
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: 20px 20px;
   border: none;
   width: 40px;
-  height: 40px; 
+  height: 40px;
   background-color: #ffffff;
 }
 
@@ -525,6 +539,39 @@ li {
 }
 
 .small-icon {
-  width: 15px; 
-  height: 15px; 
+  width: 15px;
+  height: 15px;
+}
+
+/* Login form */
+
+.login-viewport{
+  background-color: #f0f0f0;
+}
+
+.login-tab {
+  padding: 24px 8px 8px 8px !important;
+  font-size: 1.1em;
+  font-weight: normal;
+  display: flex;
+}
+
+
+.login-tab-item {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+
+.active{
+  color: red !important;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+.login-tab-item:not(.active) hr {
+  color: #ffffff;
 }
