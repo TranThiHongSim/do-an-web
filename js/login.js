@@ -77,6 +77,25 @@ $(document).ready(function () {
         }
     });
 
+    $('#btn-quenmk').click(function (e) {
+        e.preventDefault();
+        goToForgotPass();
+    });
+
+    function goToForgotPass() {
+        $('.login-form').hide();
+        $('.register-form').hide();
+        $('.forgotpass-form').show();
+        $('.login-tab').hide();
+    }
+
+    function backToLogin() {
+        $('.login-form').show();
+        $('.register-form').hide();
+        $('.forgotpass-form').hide();
+        $('.login-tab').show();
+    }
+
     $('#goToLogin').click(function (e) {
         e.preventDefault();
         goToLogin();
@@ -90,6 +109,7 @@ $(document).ready(function () {
     function goToRegister() {
         $('.login-form').hide();
         $('.register-form').show();
+        $('.forgotpass-form').hide();
         $('.login-tab-login').removeClass('active');
         $('.login-tab-register').addClass('active');
     }
@@ -97,7 +117,13 @@ $(document).ready(function () {
     function goToLogin() {
         $('.register-form').hide();
         $('.login-form').show();
+        $('.forgotpass-form').hide();
         $('.login-tab-register').removeClass('active');
         $('.login-tab-login').addClass('active');
     }
+
+    $('#btn-cancel').click(function (e) { 
+        e.preventDefault();
+        backToLogin();
+    });
 });

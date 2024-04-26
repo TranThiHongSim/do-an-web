@@ -575,3 +575,15 @@ li {
 .login-tab-item:not(.active) hr {
   color: #ffffff;
 }
+
+.btn-quenmk{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cancel{
+  background-color: transparent;
+  border: 1px solid #f87d7d;
+  border-radius: 5px;
+  color: #f87d7d;
+}
