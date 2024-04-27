@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +11,21 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/khai-truong-gold.js "></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 </head>
+
 <body>
     <div class="viewport">
         <div class="header-wrapped"></div>
-        
-        <div class="body-wrapped container-fluid" >
+
+        <div class="body-wrapped container-fluid">
             <div class="container" style="width: 80;">
-                <form class="service-form-contact" action="../html/thanhtoan.html" style="background-color: rgb(237, 237, 237);">
+                <form class="service-form-contact" action="../html/thanhtoan.html"
+                    style="background-color: rgb(237, 237, 237);">
                     <div class="service-info">
-                        <div class="text-center" >
+                        <div class="text-center">
                             <h2><b>LỄ KHAI TRƯƠNG - GÓI GOLD</b></h2>
                         </div>
                         <div class="row " style="align-items: center;">
@@ -29,8 +33,9 @@
                                 <label for="date">Thời gian tổ chức:</label>
                             </div>
                             <div class="col-sm-8">
-                                <input id="date"  class="form-control" type="date" required>
-                                <span class="text-danger" id="tbDate" style="font-style: italic; font-size: 15px;"></span>
+                                <input id="date" class="form-control" type="date" required>
+                                <span class="text-danger" id="tbDate"
+                                    style="font-style: italic; font-size: 15px;"></span>
                             </div>
                         </div>
                     </div>
@@ -43,8 +48,10 @@
                                 <label for="hoTen">Họ và tên:</label>
                             </div>
                             <div class="col-sm-8">
-                                <input class="form-control" id="hoTen" type="text" placeholder="Nhập vào họ tên......" required>
-                                <span class="text-danger" id="tbHoTen" style="font-style: italic; font-size: 15px;"></span>
+                                <input class="form-control" id="hoTen" type="text" placeholder="Nhập vào họ tên......"
+                                    required>
+                                <span class="text-danger" id="tbHoTen"
+                                    style="font-style: italic; font-size: 15px;"></span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
@@ -52,8 +59,10 @@
                                 <label for="sdt">Số điện thoại:</label>
                             </div>
                             <div class="col-sm-8">
-                                <input class="form-control" id="sdt" type="text" placeholder="Nhập vào số điện thoại....." required>
-                                <span class="text-danger" id="tbSDT" style="font-style: italic; font-size: 15px;"></span>
+                                <input class="form-control" id="sdt" type="text"
+                                    placeholder="Nhập vào số điện thoại....." required>
+                                <span class="text-danger" id="tbSDT"
+                                    style="font-style: italic; font-size: 15px;"></span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
@@ -61,17 +70,21 @@
                                 <label for="email">Email:</label>
                             </div>
                             <div class="col-sm-8">
-                                <input class="form-control" type="email" id="email" placeholder="Nhập vào email....." required>
-                                <span class="text-danger" id="tbEmail" style="font-style: italic; font-size: 15px;"></span>
+                                <input class="form-control" type="email" id="email" placeholder="Nhập vào email....."
+                                    required>
+                                <span class="text-danger" id="tbEmail"
+                                    style="font-style: italic; font-size: 15px;"></span>
                             </div>
                         </div>
-                        <div class="row" >
+                        <div class="row">
                             <div class="col-sm-4">
                                 <label>Tên công ty:</label>
                             </div>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" id="tenCT" placeholder="Nhập vào tên công ty....." required>
-                                <span class="text-danger" id="tbTenCT" style="font-style: italic; font-size: 15px;"></span>
+                                <input class="form-control" type="text" id="tenCT"
+                                    placeholder="Nhập vào tên công ty....." required>
+                                <span class="text-danger" id="tbTenCT"
+                                    style="font-style: italic; font-size: 15px;"></span>
                             </div>
                         </div>
                     </div>
@@ -92,7 +105,7 @@
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="backDrop">Backdrop đơn giản</label>
+                                <label for="backDrop">Backdrop theo yêu cầu</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="backDrop" min="1" max="100" value="1">
@@ -106,7 +119,7 @@
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="hoaTuoi">Hoa tươi trang trí bàn khai trương</label>
+                                <label for="hoaTuoi">Hoa tươi trang trí bàn khai trương và sân khấu</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="hoaTuoi" min="1" max="100" value="1">
@@ -120,72 +133,361 @@
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="amThanhAnhSang">Hệ thống âm thanh ánh sáng cơ bản</label>
+                                <label for="amThanhAnhSang">Hệ thống âm thanh ánh sáng hiện đại</label>
                             </div>
                             <div class="col-sm-2">
-                                <input class="form-number" type="number" id="amThanhAnhSang" min="1" max="100" value="1">
+                                <input class="form-number" type="number" id="amThanhAnhSang" min="1" max="100"
+                                    value="1">
                             </div>
                             <div class="col-sm-3">
-                                <span id="giaAmThanhAnhSang">3.000.000 VND</span>
+                                <span id="giaAmThanhAnhSang">5.000.000 VND</span>
                             </div>
                             <div class="col-sm-3">
-                                <span id="tienAmThanhAnhSang">3.000.000 VND</span>
+                                <span id="tienAmThanhAnhSang">5.000.000 VND</span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="mc">MC chuyên nghiệp dẫn dắt chương trình</label>
+                                <label for="mc">MC chuyên nghiệp dẫn dắt chương trình theo kịch bản sáng tạo</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="mc" min="1" max="100" value="1">
                             </div>
                             <div class="col-sm-3">
-                                <span id="giaMC">2.000.000 VND</span>
+                                <span id="giaMC">3.000.000 VND</span>
                             </div>
                             <div class="col-sm-3">
-                                <span id="tienMC">2.000.000 VND</span>
+                                <span id="tienMC">3.000.000 VND</span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="khachMoi">Tiếp đón và hướng dẫn khách mời</label>
+                                <label for="khachMoi">Tiếp đón và hướng dẫn khách mời bằng đội ngũ lễ tân chuyên nghiệp</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="khachMoi" min="1" max="100" value="1">
                             </div>
                             <div class="col-sm-3">
-                                <span id="giaKhachMoi">1.000.000 VND</span>
+                                <span id="giaKhachMoi">2.000.000 VND</span>
                             </div>
                             <div class="col-sm-3">
-                                <span id="tienKhachMoi">1.000.000 VND</span>
+                                <span id="tienKhachMoi">2.000.000 VND</span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="amNhac">Âm nhạc phù hợp với không khí sự kiện</label>
+                                <label for="amNhac">Âm nhạc sôi động, phù hợp với không khí sự kiện</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="amNhac" min="1" max="100" value="1">
                             </div>
                             <div class="col-sm-3">
-                                <span id="giaAmNhac">1.000.000 VND</span>
+                                <span id="giaAmNhac">2.000.000 VND</span>
                             </div>
                             <div class="col-sm-3">
-                                <span id="tienAmNhac">1.000.000 VND</span>
+                                <span id="tienAmNhac">2.000.000 VND</span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-sm-4">
-                                <label for="nuocUong">Nước uống và đồ ăn nhẹ (bàn)</label>
+                                <label for="nuocUong">Nước uống, đồ ăn nhẹ và tiệc cocktail nhẹ (bàn)</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-number" type="number" id="nuocUong" min="1" max="100" value="1">
                             </div>
                             <div class="col-sm-3">
-                                <span id="giaNuocUong">1.000.000 VND</span>
+                                <span id="giaNuocUong">2.000.000 VND</span>
                             </div>
                             <div class="col-sm-3">
-                                <span id="tienNuocUong">1.000.000 VND</span>
+                                <span id="tienNuocUong">2.000.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <h4><b>TỔNG CỘNG:</b></h4>
+                            <span id="tongTien">VND</span>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <div>
+                                <h4><b>THANH TOÁN:</b></h4>
+                                <p>Chọn số tiền bạn muốn thanh toán/cọc (tối thiểu 30%)</p>
+                            </div>
+                            <div>
+                                <select title="tienCoc" class="form-select" name="tienCoc" id="tienCoc"
+                                    style="height: 50px;">
+                                    <option value="30">30%</option>
+                                    <option value="50">50%</option>
+                                    <option value="70">70%</option>
+                                    <option value="100">100%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <h4><b>SỐ TIỀN CẦN THANH TOÁN:</b></h4>
+                            <span id="tienCanThanhToan">VND</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="container mt-3">
+                                <button id="btnSubmit" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#myModal">
+                                    Xác nhận
+                                </button>
+                            </div>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" style="text-align: center;">THANH TOÁN DỊCH VỤ</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class=" row">
+                                                <div class="col" style="text-align: center;">
+                                                    <div style="position: relative;">
+                                                        <span style="display: block;"><b>THÔNG TIN TÀI KHOẢN NGÂN
+                                                                HÀNG:</b></span>
+                                                        <div style="position: absolute;">
+                                                            <img src="../img/thenganhang.png" alt="bank" width="50%">
+                                                        </div>
+                                                        <div style="height: 70px; "></div>
+                                                        <div class=" row taikhoan" style="margin: 0 45px;">
+                                                            <div class="col-6 label-taikhoan">
+                                                                <span style="display: block;"><b>SỐ TÀI
+                                                                        KHOẢN:</b></span>
+                                                                <span style="display: block;"><b>TÊN NGÂN
+                                                                        HÀNG:</b></span>
+                                                                <span style="display: block;"><b>CHỦ TÀI
+                                                                        KHOẢN:</b></span>
+                                                            </div>
+                                                            <div class="col-6 label-taikhoan">
+                                                                <span style="display: block;">070120109144</span>
+                                                                <span style="display: block;">SACOMBANK</span>
+                                                                <span style="display: block;">TRẦN THỊ HỒNG SIM</span>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            style="display: block; margin-top: 20px; margin-bottom: 10px;"><b>QUÉT
+                                                                MÃ QR
+                                                                ĐỂ THANH TOÁN</b></span>
+                                                        <img src="../img/QRthanhtoan.jpg" alt="qr" width="50%">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div>
+                                                        <span><b>Số tiền bạn cần thanh toán là:</b></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="file">Chọn tệp minh chứng:</label>
+                                                        <input type="file" id="file" name="file"
+                                                            onchange="previewImage()">
+                                                        <img id="preview" src="#" alt="Hình ảnh minh chứng"
+                                                            style="display: none; max-width: 100%; margin-top: 10px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="text-align: center;">
+                                                <button type="button">Xác nhận thanh toán</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- <form class="service-form-contact" action="../html/thanhtoan.html"
+                    style="background-color: rgb(237, 237, 237);">
+                    <div class="service-info">
+                        <div class="text-center">
+                            <h2><b>LỄ KHAI TRƯƠNG - GÓI GOLD</b></h2>
+                        </div>
+                        <div class="row " style="align-items: center;">
+                            <div class="col-sm-4">
+                                <label for="date">Thời gian tổ chức:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input id="date" class="form-control" type="date" required>
+                                <span class="text-danger" id="tbDate"
+                                    style="font-style: italic; font-size: 15px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="text-center" style="margin-bottom: 20px;">
+                            <h2><b>THÔNG TIN KHÁCH HÀNG</b></h2>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="hoTen">Họ và tên:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="hoTen" type="text" placeholder="Nhập vào họ tên......"
+                                    required>
+                                <span class="text-danger" id="tbHoTen"
+                                    style="font-style: italic; font-size: 15px;"></span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="sdt">Số điện thoại:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="sdt" type="text"
+                                    placeholder="Nhập vào số điện thoại....." required>
+                                <span class="text-danger" id="tbSDT"
+                                    style="font-style: italic; font-size: 15px;"></span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="email" id="email" placeholder="Nhập vào email....."
+                                    required>
+                                <span class="text-danger" id="tbEmail"
+                                    style="font-style: italic; font-size: 15px;"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Tên công ty:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="tenCT"
+                                    placeholder="Nhập vào tên công ty....." required>
+                                <span class="text-danger" id="tbTenCT"
+                                    style="font-style: italic; font-size: 15px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <h4><b>TÊN DỊCH VỤ</b></h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <h4><b>SỐ LƯỢNG</b></h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4><b>GIÁ</b></h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4><b>THÀNH TIỀN</b></h4>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="backDrop">Backdrop theo yêu cầu</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="backDrop" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaBackDrop">3.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienBackDrop">3.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="hoaTuoi">Hoa tươi trang trí bàn khai trương và sân khấu</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="hoaTuoi" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaHoaTuoi">2.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienHoaTuoi">2.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="amThanhAnhSang">Hệ thống âm thanh ánh sáng hiện đại</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="amThanhAnhSang" min="1" max="100"
+                                    value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaAmThanhAnhSang">5.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienAmThanhAnhSang">5.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="mc">MC chuyên nghiệp dẫn dắt chương trình theo kịch bản sáng tạo</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="mc" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaMC">3.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienMC">3.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="khachMoi">Tiếp đón và hướng dẫn khách mời bằng đội ngũ lễ tân chuyên
+                                    nghiệp</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="khachMoi" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaKhachMoi">2.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienKhachMoi">2.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="amNhac">Âm nhạc sôi động, phù hợp với không khí sự kiện</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="amNhac" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaAmNhac">2.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienAmNhac">2.000.000 VND</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm-4">
+                                <label for="nuocUong">Nước uống, đồ ăn nhẹ và tiệc cocktail nhẹ</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-number" type="number" id="nuocUong" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="giaNuocUong">2.000.000 VND</span>
+                            </div>
+                            <div class="col-sm-3">
+                                <span id="tienNuocUong">2.000.000 VND</span>
                             </div>
                         </div>
                         <div class="row" style="margin-bottom: 20px;">
@@ -216,7 +518,8 @@
                                 <p>Chọn số tiền bạn muốn thanh toán/cọc (tối thiểu 30%)</p>
                             </div>
                             <div>
-                                <select title="tienCoc" class="form-select" name="tienCoc" id="tienCoc" style="height: 50px;">
+                                <select title="tienCoc" class="form-select" name="tienCoc" id="tienCoc"
+                                    style="height: 50px;">
                                     <option value="30">30%</option>
                                     <option value="50">50%</option>
                                     <option value="70">70%</option>
@@ -230,18 +533,100 @@
                             <h4><b>SỐ TIỀN CẦN THANH TOÁN:</b></h4>
                             <span id="tienCanThanhToan">VND</span>
                         </div>
-                        <div class="text-center"> 
-                            <button class="btn btn-primary" id="btnSubmit" type="submit" style="width: 20%; height: 45px;">Xác nhận</button>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="btnSubmit" type="submit"
+                                style="width: 20%; height: 45px;">Xác nhận</button>
+                        </div> --!
+                      The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h3 class="modal-title" style="text-align: center;">THANH TOÁN DỊCH VỤ</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class=" row">
+                                    <div class="col" style="text-align: center;">
+                                        <div style="position: relative;">
+                                            <span style="display: block;"><b>THÔNG TIN TÀI KHOẢN NGÂN
+                                                    HÀNG:</b></span>
+                                            <div style="position: absolute;">
+                                                <img src="../img/thenganhang.png" alt="bank" width="50%">
+                                            </div>
+                                            <div style="height: 70px; "></div>
+                                            <div class=" row taikhoan" style="margin: 0 45px;">
+                                                <div class="col-6 label-taikhoan">
+                                                    <span style="display: block;"><b>SỐ TÀI KHOẢN:</b></span>
+                                                    <span style="display: block;"><b>TÊN NGÂN HÀNG:</b></span>
+                                                    <span style="display: block;"><b>CHỦ TÀI KHOẢN:</b></span>
+                                                </div>
+                                                <div class="col-6 label-taikhoan">
+                                                    <span style="display: block;">070120109144</span>
+                                                    <span style="display: block;">SACOMBANK</span>
+                                                    <span style="display: block;">TRẦN THỊ HỒNG SIM</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span style="display: block; margin-top: 20px; margin-bottom: 10px;"><b>QUÉT
+                                                    MÃ QR
+                                                    ĐỂ THANH TOÁN</b></span>
+                                            <img src="../img/QRthanhtoan.jpg" alt="qr" width="50%">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div>
+                                            <span><b>Số tiền bạn cần thanh toán là:</b></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="file">Chọn tệp minh chứng:</label>
+                                            <input type="file" id="file" name="file" onchange="previewImage()">
+                                            <img id="preview" src="#" alt="Hình ảnh minh chứng"
+                                                style="display: none; max-width: 100%; margin-top: 10px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="text-align: center;">
+                                    <button type="button">Xác nhận thanh toán</button>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    
-                </form>
-            </div>
-        </div>
+                </div>
 
-        <div class="site-footer"> </div>
+            </div>
+
+            </form>
+        </div>
     </div>
 
-    
+    <div class="site-footer"> </div>
+    </div>
+    <script>
+        function previewImage() {
+            var preview = document.getElementById('preview');
+            var file = document.getElementById('file').files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = '';
+                preview.style.display = 'none';
+            }
+        }
+    </script>
+
+
 </body>
+
 </html>

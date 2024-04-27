@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
-    <title>HỘI THẢO HỘI NGHỊ</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
     .card {
@@ -67,6 +68,24 @@
         width: 100%;
         height: auto;
     }
+
+    .line {
+        width: 0;
+        /* Bắt đầu với độ rộng là 0 */
+        height: 2px;
+        /* Độ dày của đường line */
+        background-color: rgb(192, 192, 192);
+        /* Màu sắc của đường line */
+        animation: animateLine 2s linear forwards;
+        /* Áp dụng animation */
+    }
+    
+@keyframes animateLine {
+    to {
+        width: 100%; /* Kết thúc với độ rộng là 100% */
+    }
+}
+
 </style>
 
 <body>
@@ -78,9 +97,9 @@
     <!-- Giới thiệu é-->
     <div class="container-fluid" style="position: relative;">
         <div class="overlay"></div>
-        <img src="../img/bghoithao.jpg" alt="bg" class="img-fluid">
+        <img src="../img/bghoithao.jpg" alt="bg" class="img-fluid" width="1600px">
         <div class="bg-text fadeout" style="align-items: center;">
-            <h1 style="margin-top: 50px;"><b>DỊCH VỤ TỔ CHỨC HỘI THẢO, HỘI NGHỊ</b></h1>
+            <h1 style="margin-top: 150px;"><b>DỊCH VỤ TỔ CHỨC HỘI THẢO, HỘI NGHỊ</b></h1>
             <p style="padding-left: 200px; padding-right: 200px; text-align: center;">
                 Bạn đang có nhu cầu <b>tổ chức hội thảo</b> nhưng không biết tìm đơn vị <b style="color: red;">tổ chức
                     sự kiện</b> nào uy tín? Bạn muốn buổi hội thảo được tổ chức chỉnh chu, mang lại hiệu quả nhằm nâng
@@ -92,17 +111,15 @@
     <div class="container ">
         <h1 class="slideright" style="margin-top: 40px;"><b>Dịch vụ tổ chức hội thảo bài bản tại AQS Event</b></h1>
         <p class="doan slideright">Với những doanh nghiệp kinh doanh, cho ra mắt dịch vụ, sản phẩm mới việc tạo sự kiện,
-            hội
-            thảo
-            quảng bá, giới thiệu sản phẩm vô cùng cần thiết. Để cho hội thảo tổ chức mang lại hiệu quả cao, tiếp cận
-            khách hàng chuẩn xác hơn bạn cần thuê đơn vị làm sự kiện, hội thảo uy tín.</p>
-        <p class="doan slideright">
-            Công ty tổ chức sự kiện AzEvent với nhiều năm kinh nghiệm chuyên tổ chức sự kiện, hội thảo chuyên nghiệp
+            hội thảo quảng bá, giới thiệu sản phẩm vô cùng cần thiết. Để cho hội thảo tổ chức mang lại hiệu quả cao,
+            tiếp cận khách hàng chuẩn xác hơn bạn cần thuê đơn vị làm sự kiện, hội thảo uy tín.</p>
+        <p class="doan slideright" style="margin-bottom: 40px;">
+            Công ty tổ chức sự kiện AQS Event với nhiều năm kinh nghiệm chuyên tổ chức sự kiện, hội thảo chuyên nghiệp
             được nhiều doanh nghiệp lớn biết đến. Để mang tới hiệu quả của việc tổ chức hội thảo, công ty tổ chức sự
-            kiện AzEvent đã không ngừng nâng cao chất lượng dịch vụ, mang tới cho bạn sự hài lòng.</p>
-        <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+            kiện AQS Event đã không ngừng nâng cao chất lượng dịch vụ, mang tới cho bạn sự hài lòng.</p>
+        <div class="row" style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
             <div class="col-lg-6">
-                <img src="../img/hoithao1.png" alt="hoithao" width="600px" height="500px">
+                <img src="../img/hoithao1.png" alt="hoithao" width="550px" height="500px">
             </div>
             <div class="col-lg-6"
                 style="justify-content: space-between;  align-items: center; padding: -1px 35px; margin: 0px;">
@@ -121,7 +138,7 @@
             </div>
         </div>
         <div class="row" style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
-            <div class="col-lg-6" style="padding: -1px 35px; margin: 0px;">
+            <div class="col-lg-6" style="padding: -1px 35px;">
                 <h4 style="color: red;"><b>KỊCH BẢN CHƯƠNG TRÌNH HỘI NGHỊ, HỘI THẢO SÁNG TẠO</b></h4>
                 <P class="doan">Dựa trên khảo sát, có đến 70% khách mời thường rời đi trước khi chương trình hội
                     nghị hoặc hội thảo kết thúc. Nhiều người tin rằng việc tặng quà hay cung cấp phiếu giảm giá
@@ -140,19 +157,21 @@
                     ngờ và hấp dẫn để thu hút và giữ chân khách mời đến phút cuối cùng.
             </div>
             <div class="col-lg-6">
-                <img src="../img/hoithao2.png" alt="hoithao" width="600px" height="500px">
+                <img src="../img/hoithao2.png" alt="hoithao" width="550px" height="500px">
             </div>
         </div>
         <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
             <div class="col-lg-6">
-                <img src="../img/hoithao3.png" alt="hoithao" width="600px" height="500px">
+                <img src="../img/hoithao3.png" alt="hoithao" width="550px" height="500px">
             </div>
             <div class="col-lg-6"
-                style="justify-content: space-between;  align-items: center; padding: -1px 35px; margin: 0px;">
+                style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
                 <h4 style="color: red;"><b>TƯ VẤN ĐỊA ĐIỂM TỔ CHỨC HỘI NGHỊ HỘI THẢO SANG TRỌNG, ĐẲNG CẤP</b></h4>
                 <p class="doan">Trong quá trình tổ chức sự kiện, những khó khăn như vấn đề di chuyển không thuận tiện,
                     cung cấp chỗ đậu xe hạn chế hoặc không gian hẹp khó quan sát có thể ảnh hưởng đến sự hứng thú của
-                    khách mời tham dự buổi hội nghị hoặc hội thảo của bạn. Vì lý do này, AzEvent khuyên bạn nên chọn các khách sạn hoặc trung tâm hội nghị hội thảo cao cấp và sang trọng, đạt chuẩn chất lượng 45, với vị trí dễ tìm, quy mô phù hợp và tích hợp đầy đủ các tiện ích cần thiết.
+                    khách mời tham dự buổi hội nghị hoặc hội thảo của bạn. Vì lý do này, AzEvent khuyên bạn nên chọn các
+                    khách sạn hoặc trung tâm hội nghị hội thảo cao cấp và sang trọng, đạt chuẩn chất lượng 45, với vị
+                    trí dễ tìm, quy mô phù hợp và tích hợp đầy đủ các tiện ích cần thiết.
                 </p>
                 <p>Với kinh nghiệm là đối tác đáng tin cậy trong lĩnh vực tổ chức sự kiện tại TP. HCM, AQS Event có mối
                     liên kết với hàng trăm địa điểm uy tín. Chúng tôi sẵn lòng tư vấn cho bạn về lựa chọn địa điểm phù
@@ -163,9 +182,84 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="text-align: justify;">
+        <div class="line"></div>
+        <div class="container mt-4" style=" padding-top: 20px; padding-bottom: 30px;">
+            <h2 style="color: red;">Gói Dịch Vụ Tổ Chức Lễ Khánh Thành - AQS Event</h2>
+            <p><b>AQS Event</b> hân hạnh mang đến cho quý khách hàng các gói dịch vụ tổ chức <b>lễ khánh thành</b>
+                chuyên nghiệp, trọn gói với mức giá cạnh tranh. Mỗi gói dịch vụ được thiết kế phù hợp với nhu cầu và
+                ngân sách khác nhau của từng doanh nghiệp.</p>
+            <table class="table table-default table-hover">
+                <thead>
+                    <tr>
+                        <th>GÓI</th>
+                        <th>ĐỊA ĐIỂM</th>
+                        <th>TRANG TRÍ</th>
+                        <th>ÂM THANH ÁNH SÁNG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Silver</b></td>
+                        <td>Phù hợp với số lượng khách mời tối đa 50 khách</td>
+                        <td>Chủ đề đơn giản nhưng tinh tế, sang trọng</td>
+                        <td>Cơ bản, đảm bảo chất lượng tốt</td>
+                    </tr>
+                    <tr>
+                        <td><b>Gold</b></td>
+                        <td>Lựa chọn địa điểm phù hợp với số lượng khách mời (tối đa 100 khách)</td>
+                        <td>Chủ đề độc đáo, ấn tượng, phù hợp với thương hiệu.</td>
+                        <td>Hiện đại, đảm bảo chất lượng cao</td>
+                    </tr>
+                    <tr>
+                        <td><b>Platinum</td>
+                        <td> Lựa chọn địa điểm sang trọng, đẳng cấp phù hợp với số lượng khách mời (tối đa 200 khách)
+                        </td>
+                        <td>Chủ đề sang trọng, lộng lẫy, tạo điểm nhấn ấn tượng.</td>
+                        <td>Hiện đại bậc nhất, đảm bảo chất lượng âm thanh sống động và hiệu ứng ánh sáng chuyên nghiệp.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="container" style=" text-align: center">
+        <div class="row">
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/silver.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">11.000.000 - 20.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="../html/chi-tiet-dich-vu-khai-truong.html" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/gold.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25.000.000 - 35.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/platinum.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">35.000.000 - 50.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- site footer -->
-        <footer class="site-footer" >
-      
+    <footer class="site-footer">
+
     </footer>
 
 </body>
