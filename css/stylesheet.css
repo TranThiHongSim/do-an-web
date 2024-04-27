@@ -12,10 +12,11 @@ body {
 .header {
   padding: 0px 50px;
   position: relative;
+  background-color: #000000;
 }
 
 .nav-link {
-  background-color: #242526;
+  background-color: #000000;
   color: aliceblue !important;
   border-radius: 5px;
   position: relative;
@@ -34,7 +35,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #242526 !important;
+  background-color: #000000 !important;
 }
 
 .nav-link:hover::after {
@@ -42,7 +43,7 @@ body {
 }
 
 .nav-link:active {
-  background-color: #2f2b2b;
+  background-color: #000000;
   color: rgb(234, 255, 0) !important;
 }
 
@@ -105,7 +106,7 @@ li {
 /* css của footer */
 
 .site-footer {
-  background-color: #242526;
+  background-color: #000000;
   padding: 45px 0 20px;
   line-height: 24px;
   color: aliceblue;
@@ -128,7 +129,7 @@ li {
 }
 
 .site-footer a {
-  color: #737373;
+  color: #000000;
 }
 
 .site-footer a:hover {
@@ -241,22 +242,6 @@ li {
   width: 34px;
 }
 
-/* .social-icons a.facebook:hover {
-  background-color: rgb(10, 3, 89)
-}
-
-.social-icons a.twitter:hover {
-  background-color: rgb(234, 255, 0)
-}
-
-.social-icons a.linkedin:hover {
-  background-color: rgb(234, 255, 0)
-}
-
-.social-icons a.dribbble:hover {
-  background-color: rgb(234, 255, 0)
-} */
-
 @media (max-width:767px) {
   .social-icons li.title {
     display: block;
@@ -318,7 +303,7 @@ li {
 }
 
 .search-bar {
-  background-color: #242526;
+  background-color: #000000;
   /* display: none; */
   position: absolute;
   top: 100%;
