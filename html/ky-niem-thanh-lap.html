@@ -30,19 +30,27 @@
         background-color: rgba(0, 0, 0, 0.6);
         /* Màu đen với độ mờ 50% */
     }
+
     .line {
-    width: 0; /* Bắt đầu với độ rộng là 0 */
-    height: 2px; /* Độ dày của đường line */
-    background-color: rgb(192, 192, 192); /* Màu sắc của đường line */
-    animation: animateLine 2s linear forwards; /* Áp dụng animation */
+        width: 0;
+        /* Bắt đầu với độ rộng là 0 */
+        height: 2px;
+        /* Độ dày của đường line */
+        background-color: rgb(192, 192, 192);
+        /* Màu sắc của đường line */
+        animation: animateLine 2s linear forwards;
+        /* Áp dụng animation */
     }
-    
-@keyframes animateLine {
+
+    @keyframes animateLine {
     to {
         width: 100%; /* Kết thúc với độ rộng là 100% */
     }
 }
-
+    .card-text {
+        font-size: 15px;
+        color: rgb(155, 155, 155);
+    }
 </style>
 
 <body>
@@ -67,7 +75,8 @@
     </div>
     <!-- Page content -->
     <div class="container">
-        <div class="d-flex " style="justify-content: space-between;  align-items: center; margin-bottom: 40px; margin-top: 50px;">
+        <div class="d-flex "
+            style="justify-content: space-between;  align-items: center; margin-bottom: 40px; margin-top: 50px;">
             <div class="" style="margin-right: 50px;">
                 <img src="../img/thanhlap-1.jpg" alt="thanhlap" width="550px">
             </div>
@@ -106,9 +115,14 @@
             </div>
             <div>
                 <h4 style="color: red;"><b>CHI PHÍ TỔ CHỨC SỰ KIỆN KỶ NIỆM THÀNH LẬP CÔNG TY HỢP LÝ</b></h4>
-                <div class="doan">Hệ thống âm thanh không đáp ứng đủ công suất, một số món ăn không đạt chuẩn trong thực đơn, hoặc các bó hoa héo úa trước sự kiện… đều là hậu quả của việc tổ chức chương trình sự kiện giá rẻ. Tại AzEvent, chúng tôi cam kết không chỉ cung cấp các sự kiện chất lượng mà còn đảm bảo rằng bạn không cần lo lắng về chi phí tổ chức lễ kỷ niệm thành lập công ty.
+                <div class="doan">Hệ thống âm thanh không đáp ứng đủ công suất, một số món ăn không đạt chuẩn trong thực
+                    đơn, hoặc các bó hoa héo úa trước sự kiện… đều là hậu quả của việc tổ chức chương trình sự kiện giá
+                    rẻ. Tại AzEvent, chúng tôi cam kết không chỉ cung cấp các sự kiện chất lượng mà còn đảm bảo rằng bạn
+                    không cần lo lắng về chi phí tổ chức lễ kỷ niệm thành lập công ty.
                 </div>
-                <div class="doan">Chúng tôi xây dựng chương trình dựa trên ngân sách của bạn, đảm bảo rằng các yếu tố luôn đạt chất lượng, đủ số lượng và có báo giá hợp lý. Hiệu quả của chương trình luôn tương xứng với số tiền bạn bỏ ra.
+                <div class="doan">Chúng tôi xây dựng chương trình dựa trên ngân sách của bạn, đảm bảo rằng các yếu tố
+                    luôn đạt chất lượng, đủ số lượng và có báo giá hợp lý. Hiệu quả của chương trình luôn tương xứng với
+                    số tiền bạn bỏ ra.
                 </div>
             </div>
         </div>
@@ -119,7 +133,9 @@
         <div class="line"></div>
         <div class="container mt-4" style=" padding-top: 20px; padding-bottom: 30px;">
             <h2 style="color: red;">Gói Dịch Vụ Tổ Chức Lễ Khánh Thành - AQS Event</h2>
-            <p><b>AQS Event</b> hân hạnh mang đến cho quý khách hàng các gói dịch vụ tổ chức <b>lễ khánh thành</b> chuyên nghiệp, trọn gói với mức giá cạnh tranh. Mỗi gói dịch vụ được thiết kế phù hợp với nhu cầu và ngân sách khác nhau của từng doanh nghiệp.</p>
+            <p><b>AQS Event</b> hân hạnh mang đến cho quý khách hàng các gói dịch vụ tổ chức <b>lễ khánh thành</b>
+                chuyên nghiệp, trọn gói với mức giá cạnh tranh. Mỗi gói dịch vụ được thiết kế phù hợp với nhu cầu và
+                ngân sách khác nhau của từng doanh nghiệp.</p>
             <table class="table table-default table-hover">
                 <thead>
                     <tr>
@@ -163,7 +179,7 @@
                     <h5 class="card-title">11.000.000 - 20.000.000</h5>
                     <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
                             liên hệ với chúng tôi!</i></p>
-                    <a href="../html/chi-tiet-dich-vu-khai-truong.html" class="btn btn-primary">Đặt ngay!</a>
+                    <a href="../html/thanh-lap-silver.html" class="btn btn-primary">Đặt ngay!</a>
                 </div>
             </div>
             <div class="col-lg-4 card" style="width: 300px;">
@@ -172,7 +188,7 @@
                     <h5 class="card-title">25.000.000 - 35.000.000</h5>
                     <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
                             liên hệ với chúng tôi!</i></p>
-                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                    <a href="../html/thanh-lap-gold.html" class="btn btn-primary">Đặt ngay!</a>
                 </div>
             </div>
             <div class="col-lg-4 card" style="width: 300px;">
@@ -181,7 +197,7 @@
                     <h5 class="card-title">35.000.000 - 50.000.000</h5>
                     <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
                             liên hệ với chúng tôi!</i></p>
-                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                    <a href="../html/thanh-lap-platinum.html" class="btn btn-primary">Đặt ngay!</a>
                 </div>
             </div>
         </div>
