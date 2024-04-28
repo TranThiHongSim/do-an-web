@@ -16,6 +16,10 @@ body {
   z-index: 1000;
 }
 
+.content-wrapped{
+  margin-top: 105px;
+}
+
 .header {
   padding: 0px 50px;
   position: relative;
