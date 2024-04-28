@@ -25,6 +25,20 @@ $(document).ready(function () {
         });
     }
 
+    var previousScroll = 0;
+
+    $(window).scroll(function () {
+        var currentScroll = $(this).scrollTop();
+        if (currentScroll > previousScroll) {
+            // Người dùng đang cuộn xuống, ẩn header
+            $('.header-wrapped').slideUp();
+        } else {
+            // Người dùng đang cuộn lên, hiển thị header
+            $('.header-wrapped').slideDown();
+        }
+        previousScroll = currentScroll;
+    });
+
     // $('#btn-search').click(function () {
     //     // $('.search-bar').toggleClass('show');
     //     console.log('click');
@@ -102,7 +116,7 @@ $(document).ready(function () {
     // function formatCurrency(number) {
     //     return number.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
     // }
-    
+
     var testimonials = $(".testimonial-item");
 
     // Lặp qua từng cột
@@ -139,16 +153,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-    function showSearchBar() {
-        $('.search-bar').toggleClass('show');
-        var imgElement = $('#btn-search img');
+function showSearchBar() {
+    $('.search-bar').toggleClass('show');
+    var imgElement = $('#btn-search img');
 
     if ($('.search-bar').hasClass('show')) {
         imgElement.attr('src', '../img/icon/close.png');
-        imgElement.addClass('small-icon'); 
+        imgElement.addClass('small-icon');
     } else {
         imgElement.attr('src', '../img/icon/search.png');
         imgElement.removeClass('small-icon');
     }
-    }
-
+}
