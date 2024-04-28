@@ -31,10 +31,10 @@ $(document).ready(function () {
         var currentScroll = $(this).scrollTop();
         if (currentScroll > previousScroll) {
             // Người dùng đang cuộn xuống, ẩn header
-            $('.header-wrapped').slideUp();
+            $('.header-wrapped').removeClass('header-top').addClass('header-bottom');
         } else {
             // Người dùng đang cuộn lên, hiển thị header
-            $('.header-wrapped').slideDown();
+            $('.header-wrapped').removeClass('header-bottom').addClass('header-top');
         }
         previousScroll = currentScroll;
     });
