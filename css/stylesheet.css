@@ -13,7 +13,16 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: top 0.5s;
   z-index: 1000;
+}
+
+.header-top{
+  top: 0;
+}
+
+.header-bottom{
+  top: -100px;
 }
 
 .content-wrapped{
