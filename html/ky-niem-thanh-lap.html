@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,38 @@
     <title>LỄ KHAI TRƯƠNG</title>
 </head>
 <style>
-    .card{
-        margin: 70px;        
+    .card {
+        margin: 70px;
     }
-    .doan{
+
+    .doan {
         margin-bottom: 10px;
     }
+
     .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Màu đen với độ mờ 50% */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Màu đen với độ mờ 50% */
     }
+    .line {
+    width: 0; /* Bắt đầu với độ rộng là 0 */
+    height: 2px; /* Độ dày của đường line */
+    background-color: rgb(192, 192, 192); /* Màu sắc của đường line */
+    animation: animateLine 2s linear forwards; /* Áp dụng animation */
+    }
+    
+@keyframes animateLine {
+    to {
+        width: 100%; /* Kết thúc với độ rộng là 100% */
+    }
+}
+
 </style>
+
 <body>
     <!-- header ở đây é  -->
     <div class="header-wrapped" style="background-color: #242526;">
@@ -40,34 +58,143 @@
         <div class="bg-text" style="align-items: center;">
             <h1 style="margin-top: 50px;"><b>TỔ CHỨC LỄ KỶ NIỆM THÀNH LẬP CÔNG TY</b></h1>
             <p style="padding-left: 350px; padding-right: 350px; text-align: justify;">
-                Lễ kỷ niệm là một sự kiện đặc biệt được tổ chức để đánh dấu một cột mốc quan trọng hoặc một dịp đáng nhớ trong lịch sử của một cá nhân, tổ chức hoặc quốc gia. Đó là thời điểm hợp lý để ghi nhận những thành tựu trong quá khứ, vinh danh những người có công và truyền cảm hứng cho tương lai. Việc tổ chức lễ kỷ niệm không chỉ mang ý nghĩa tôn vinh và tri ân, mà còn là cơ hội để xây dựng và củng cố các mối quan hệ trong cộng đồng, đồng thời tạo ra sự gắn kết và tạo nên những kỉ niệm đáng nhớ.</p>
+                Lễ kỷ niệm là một sự kiện đặc biệt được tổ chức để đánh dấu một cột mốc quan trọng hoặc một dịp đáng nhớ
+                trong lịch sử của một cá nhân, tổ chức hoặc quốc gia. Đó là thời điểm hợp lý để ghi nhận những thành tựu
+                trong quá khứ, vinh danh những người có công và truyền cảm hứng cho tương lai. Việc tổ chức lễ kỷ niệm
+                không chỉ mang ý nghĩa tôn vinh và tri ân, mà còn là cơ hội để xây dựng và củng cố các mối quan hệ trong
+                cộng đồng, đồng thời tạo ra sự gắn kết và tạo nên những kỉ niệm đáng nhớ.</p>
         </div>
     </div>
     <!-- Page content -->
     <div class="container">
-        <div class="d-flex " style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
+        <div class="d-flex " style="justify-content: space-between;  align-items: center; margin-bottom: 40px; margin-top: 50px;">
             <div class="" style="margin-right: 50px;">
-                <img src="../img/lekhaitruong.jpg" alt="lekhaitruong" width="550px">
+                <img src="../img/thanhlap-1.jpg" alt="thanhlap" width="550px">
             </div>
             <div>
                 <h4 style="color: red;"><b>KỊCH BẢN KỶ NIỆM NGÀY THÀNH LẬP CÔNG TY LẮNG ĐỌNG, Ý NGHĨA</b></h4>
-                <div class="doan">Khá nhiều công ty đã mắc phải sai lầm khi sử dụng những bài diễn thuyết không có kết quả hoặc tập trung quá nhiều vào việc tặng quà cho khách hàng và đối tác trong việc kể lại câu chuyện về việc thành lập doanh nghiệp, điều này đã làm cho các chương trình kỷ niệm thành lập công ty trở nên rườm rà và thiếu ý nghĩa.
+                <div class="doan">Khá nhiều công ty đã mắc phải sai lầm khi sử dụng những bài diễn thuyết không có kết
+                    quả hoặc tập trung quá nhiều vào việc tặng quà cho khách hàng và đối tác trong việc kể lại câu
+                    chuyện về việc thành lập doanh nghiệp, điều này đã làm cho các chương trình kỷ niệm thành lập công
+                    ty trở nên rườm rà và thiếu ý nghĩa.
                 </div>
-                <div class="doan">Chúng tôi tổ chức lễ khai trương kết hợp với chương trình roadshow, mời các ngôi sao nổi tiếng tham dự,
-                áp dụng công nghệ hiện đại vào nghi lễ khai trương, thiết kế kịch bản minigame hấp dẫn và đề xuất ý
-                tưởng tổ chức tiệc khai trương độc đáo phù hợp với từng lĩnh vực cụ thể.
-            </div>
+                <div class="doan">Chúng tôi tổ chức lễ khai trương kết hợp với chương trình roadshow, mời các ngôi sao
+                    nổi tiếng tham dự,
+                    áp dụng công nghệ hiện đại vào nghi lễ khai trương, thiết kế kịch bản minigame hấp dẫn và đề xuất ý
+                    tưởng tổ chức tiệc khai trương độc đáo phù hợp với từng lĩnh vực cụ thể.
+                </div>
             </div>
         </div>
         <div class="d-flex " style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
             <div>
-                <h4 style="color: red;"><b>CUNG CẤP NHÂN SỰ, THIẾT BỊ PHỤC VỤ LỄ KHAI TRƯƠNG</b></h4>
-                <div class="doan">Nhân sự tham gia vào lễ khai trương là cách doanh nghiệp giao tiếp đầu tiên với khách hàng và đối tác. AzEvent hiểu rõ điều này và cung cấp đội ngũ nhân sự chuyên nghiệp bao gồm MC, PG, ca sĩ, nhóm nhảy, ban nhạc, và đội múa lân giàu kinh nghiệm. Với sự tận tâm và khả năng linh hoạt, chúng tôi cam kết mang lại ấn tượng tốt đẹp cho sự kiện của quý vị.
-                </div>      
-                <div class="doan">
-                Ngoài ra, AzEvent luôn sẵn lòng cung cấp hệ thống thiết bị âm thanh, ánh sáng, sân khấu, bàn ghế, nhà giàn và các dụng cụ khác để tổ chức lễ khai trương một cách hiện đại, chất lượng và ấn tượng. Dù lễ khai trương diễn ra trong nhà hay ngoài trời, tại văn phòng, showroom, cửa hàng hoặc nhà máy, chúng tôi cam kết đáp ứng mọi yêu cầu một cách nhanh chóng và linh hoạt.
+                <h4 style="color: red;"><b>KEYMOMENT ĐỘC LẠ - GHI DẤU MỐC SON KỶ NIỆM THÀNH LẬP</b></h4>
+                <div class="doan">Các phần trình diễn được tổ chức một cách tinh tế và đầy nghệ thuật như vẽ cát động,
+                    múa LED tương tác, sử dụng hologram và kỹ thuật 3D Mapping kết hợp với biểu diễn nhảy, kịch nói và
+                    nghệ thuật biểu diễn khác… Tạo ra một bức tranh sống động về quá trình hoạt động của doanh nghiệp
+                    không chỉ để lại ấn tượng mạnh mẽ, mà còn mang đến những cảm xúc cao trào và làm cho các thành tựu
+                    vẻ đẹp rực rỡ hơn. Đây cũng là cơ hội để khán giả có thể nhìn lại chặng đường phát triển vượt bậc,
+                    tăng thêm niềm tự hào và tin tưởng vào tương lai thịnh vượng của doanh nghiệp.
+                </div>
             </div>
+            <div class="" style="margin-left: 50px;">
+                <img src="../img/thanhlap-2.jpg" alt="thanhlap" width="600px">
             </div>
+        </div>
+        <div class="d-flex " style="justify-content: space-between;  align-items: center; margin-bottom: 40px;">
+            <div class="" style="margin-right: 50px;">
+                <img src="../img/thanhlap-3.webp" alt="thanhlap" width="550px">
+            </div>
+            <div>
+                <h4 style="color: red;"><b>CHI PHÍ TỔ CHỨC SỰ KIỆN KỶ NIỆM THÀNH LẬP CÔNG TY HỢP LÝ</b></h4>
+                <div class="doan">Hệ thống âm thanh không đáp ứng đủ công suất, một số món ăn không đạt chuẩn trong thực đơn, hoặc các bó hoa héo úa trước sự kiện… đều là hậu quả của việc tổ chức chương trình sự kiện giá rẻ. Tại AzEvent, chúng tôi cam kết không chỉ cung cấp các sự kiện chất lượng mà còn đảm bảo rằng bạn không cần lo lắng về chi phí tổ chức lễ kỷ niệm thành lập công ty.
+                </div>
+                <div class="doan">Chúng tôi xây dựng chương trình dựa trên ngân sách của bạn, đảm bảo rằng các yếu tố luôn đạt chất lượng, đủ số lượng và có báo giá hợp lý. Hiệu quả của chương trình luôn tương xứng với số tiền bạn bỏ ra.
+                </div>
+            </div>
+        </div>
 
-    </body>
+    </div>
+
+    <div class="container-fluid" style="text-align: justify;">
+        <div class="line"></div>
+        <div class="container mt-4" style=" padding-top: 20px; padding-bottom: 30px;">
+            <h2 style="color: red;">Gói Dịch Vụ Tổ Chức Lễ Khánh Thành - AQS Event</h2>
+            <p><b>AQS Event</b> hân hạnh mang đến cho quý khách hàng các gói dịch vụ tổ chức <b>lễ khánh thành</b> chuyên nghiệp, trọn gói với mức giá cạnh tranh. Mỗi gói dịch vụ được thiết kế phù hợp với nhu cầu và ngân sách khác nhau của từng doanh nghiệp.</p>
+            <table class="table table-default table-hover">
+                <thead>
+                    <tr>
+                        <th>GÓI</th>
+                        <th>ĐỊA ĐIỂM</th>
+                        <th>TRANG TRÍ</th>
+                        <th>ÂM THANH ÁNH SÁNG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Silver</b></td>
+                        <td>Phù hợp với số lượng khách mời tối đa 50 khách</td>
+                        <td>Chủ đề đơn giản nhưng tinh tế, sang trọng</td>
+                        <td>Cơ bản, đảm bảo chất lượng tốt</td>
+                    </tr>
+                    <tr>
+                        <td><b>Gold</b></td>
+                        <td>Lựa chọn địa điểm phù hợp với số lượng khách mời (tối đa 100 khách)</td>
+                        <td>Chủ đề độc đáo, ấn tượng, phù hợp với thương hiệu.</td>
+                        <td>Hiện đại, đảm bảo chất lượng cao</td>
+                    </tr>
+                    <tr>
+                        <td><b>Platinum</td>
+                        <td> Lựa chọn địa điểm sang trọng, đẳng cấp phù hợp với số lượng khách mời (tối đa 200 khách)
+                        </td>
+                        <td>Chủ đề sang trọng, lộng lẫy, tạo điểm nhấn ấn tượng.</td>
+                        <td>Hiện đại bậc nhất, đảm bảo chất lượng âm thanh sống động và hiệu ứng ánh sáng chuyên nghiệp.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="container" style=" text-align: center">
+        <div class="row">
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/silver.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">11.000.000 - 20.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="../html/chi-tiet-dich-vu-khai-truong.html" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/gold.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25.000.000 - 35.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+            <div class="col-lg-4 card" style="width: 300px;">
+                <img src="../img/platinum.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">35.000.000 - 50.000.000</h5>
+                    <p class="card-text"><i>Lưu ý: Quý khách có nhu cầu đặt dịch vụ lẻ, up 01 dịch vụ trong gói vui lòng
+                            liên hệ với chúng tôi!</i></p>
+                    <a href="#" class="btn btn-primary">Đặt ngay!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+    </footer>
+    </div>
+    </div>
+
+</body>
+
 </html>

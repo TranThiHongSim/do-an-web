@@ -17,7 +17,7 @@
 <style>
     * {
         font-family: Arial, sans-serif;
-        font-size:xx-small;
+        font-size: xx-small;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -164,25 +164,25 @@
     </div>
 
     </div>
-<script>
-    function previewImage() {
-        var preview = document.getElementById('preview');
-        var file = document.getElementById('file').files[0];
-        var reader = new FileReader();
+    <script>
+        function previewImage() {
+            var preview = document.getElementById('preview');
+            var file = document.getElementById('file').files[0];
+            var reader = new FileReader();
 
-        reader.onloadend = function () {
-            preview.src = reader.result;
-            preview.style.display = 'block';
-        }
+            reader.onloadend = function () {
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            }
 
-        if (file) {
-            reader.readAsDataURL(file);
-        } else {
-            preview.src = '';
-            preview.style.display = 'none';
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = '';
+                preview.style.display = 'none';
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>

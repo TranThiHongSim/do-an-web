@@ -123,21 +123,21 @@ $(document).ready(function () {
 
 })
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     var testimonials = document.querySelectorAll(".testimonial-item");
+document.addEventListener("DOMContentLoaded", function () {
+    var testimonials = document.querySelectorAll(".testimonial-item");
 
-//     // Lặp qua từng cột
-//     testimonials.forEach(function (testimonial, index) {
-//         // Đặt thời gian hiển thị cho từng cột
-//         var delay = index * 1000; // Mỗi cột sẽ xuất hiện sau 1 giây
+    // Lặp qua từng cột
+    testimonials.forEach(function (testimonial, index) {
+        // Đặt thời gian hiển thị cho từng cột
+        var delay = index * 1000; // Mỗi cột sẽ xuất hiện sau 1 giây
 
-//         // Tạo hiệu ứng xuất hiện lần lượt
-//         setTimeout(function () {
-//             testimonial.style.opacity = "1";
-//             testimonial.style.transform = "translateY(0)";
-//         }, delay);
-//     });
-// });
+        // Tạo hiệu ứng xuất hiện lần lượt
+        setTimeout(function () {
+            testimonial.style.opacity = "1";
+            testimonial.style.transform = "translateY(0)";
+        }, delay);
+    });
+});
 
     function showSearchBar() {
         $('.search-bar').toggleClass('show');
