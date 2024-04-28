@@ -9,6 +9,13 @@ body {
   font-size: 20px;
 }
 
+.header-wrapped {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .header {
   padding: 0px 50px;
   position: relative;
@@ -530,7 +537,7 @@ li {
 
 /* Login form */
 
-.login-viewport{
+.login-viewport {
   background-color: #f0f0f0;
 }
 
@@ -549,11 +556,11 @@ li {
   text-align: center;
 }
 
-.active{
+.active {
   color: red !important;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 20px;
 }
 
@@ -561,12 +568,12 @@ li {
   color: #ffffff;
 }
 
-.btn-quenmk{
+.btn-quenmk {
   text-decoration: none;
   cursor: pointer;
 }
 
-.btn-cancel{
+.btn-cancel {
   background-color: transparent;
   border: 1px solid #f87d7d;
   border-radius: 5px;
